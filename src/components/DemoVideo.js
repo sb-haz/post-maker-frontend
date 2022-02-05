@@ -1,6 +1,6 @@
 const DemoVideo = () => {
     return (
-        <div className="demo-video">
+        <div className="hero-video">
             <img src="https://via.placeholder.com/350" alt="" />
         </div>
         

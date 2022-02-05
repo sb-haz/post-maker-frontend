@@ -6,11 +6,19 @@ import HeroSection from './components/HeroSection';
 function App() {
   return (
     <div className="App">
+
       <Navbar />
+
       <div className="content">
         <HeroSection />
+      </div>
+
+      <div className="spacer waves"></div>
+
+      <div className="content post-spacer">
         <AvailableTools />
       </div>
+
     </div>
   );
 }

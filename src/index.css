@@ -11,6 +11,15 @@
     color: #0f1d40
 }
 
+/* all content */
+.content {
+    padding: 30px;
+}
+
+.post-spacer {
+    background-color: #ce2b7b;
+}
+
 .hero-section h1 {
     font-size: 40px;
     font-weight: 600;
@@ -50,7 +59,7 @@ a:hover {
     border-radius: 10px;
 }
 
-.hero-start-btn:hover::after { 
+.hero-start-btn:hover::after {
     background: linear-gradient(5deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
 }
 
@@ -61,7 +70,7 @@ a:hover {
     /*max-width: 600px;*/
     margin: 0 auto;
     padding: 20px;
-    border-bottom: 2px solid #f2f2f2;
+    /*border-bottom: 2px solid #f2f2f2;*/
 }
 
 .navbar h1 {
@@ -84,14 +93,13 @@ a:hover {
     color: #f1356d;
 }
 
-/* all content */
-.content {
-    margin: 30px;
-}
 
 /* hero section */
 .hero-section {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 10px;
 }
 
@@ -105,6 +113,36 @@ a:hover {
 
 .hero-section p {
     color: #455466;
+}
+
+.hero-video {
+    margin-top: 5px;
+    transform: rotate(-1.5deg);
+    transform-origin: center;
+}
+
+/* spacer */
+.spacer {
+    aspect-ratio: 960/150;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.waves {
+    background-image: url(../public/haikei-waves.svg);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* available tools section */
