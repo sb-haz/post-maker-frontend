@@ -199,7 +199,7 @@ a:hover {
 
     font-size: 14px;
 
-    z-index: -2;
+    z-index: 0;
     /* move below btn colour gradient */
 }
 
@@ -210,8 +210,10 @@ a:hover {
 }
 
 .tool-new {
-    color: #4ece61;
+    color: #0cb425;
     font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: -10px;
 }
 
 .tool-coming-soon {
@@ -219,12 +221,18 @@ a:hover {
     font-weight: bold;
 }
 
-.tool-card-title {
-    font-weight: bold;
+.tool-card h2 {
+    /*font-weight: bold;*/
+    font-weight: 500;
 }
 
 .tool-card img {
     border-radius: 5px;
+}
+
+.tool-card a {
+    width: 30%;
+    margin-top: 5px;
 }
 
 .tool-cards {

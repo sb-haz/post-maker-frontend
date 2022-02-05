@@ -19,7 +19,6 @@ function App() {
       <div className="content post-spacer">
         <AvailableTools />
       </div>
-
     </div>
   );
 }
