@@ -17,10 +17,10 @@
 }
 
 .post-spacer {
-    background-color: #ce2b7b;
-    background: linear-gradient(0deg, #eeca55, #c9772f, #ce2b7b);
+    /*background: linear-gradient(0deg, #fff, #fff, #fff, #fff, #c9772f, #ce2b7b);*/
 }
 
+/* hero section */
 .hero-section h1 {
     font-size: 40px;
     font-weight: 600;
@@ -124,7 +124,7 @@ a:hover {
 
 /* spacer */
 .spacer {
-    aspect-ratio: 960/150;
+    aspect-ratio: 960/100;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,8 +132,18 @@ a:hover {
 
 }
 
+.rotated {
+    transform: rotate(180deg);
+    transform-origin: center;
+
+}
+
 .waves {
     background-image: url(../public/haikei-waves.svg);
+}
+
+.waves-inverted {
+    background-image: url(../public/haikei-waves-inverted.svg);
 }
 
 /* available tools section */
@@ -149,19 +159,11 @@ a:hover {
 
 .available-tools-text p {
     width: 50%;
-    color: white;
 }
 
 .available-tools-text h1 {
-    color: white;
-}
-
-.tool-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .tool-card {
@@ -173,13 +175,21 @@ a:hover {
     background: #fff;
     padding: 20px;
     width: 200px;
-    height: 150px;
+    height: fit-content;
 }
 
 .tool-card:hover {
     margin: 12px;
     padding: 20px;
     box-shadow: 1px 3px 5px rgba(241, 53, 109, 1);
+}
+
+.tool-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 /* text colour gradient */

@@ -14,6 +14,7 @@ function App() {
       </div>
 
       <div className="spacer waves"></div>
+      <div className="spacer waves-inverted"></div>
 
       <div className="content post-spacer">
         <AvailableTools />
