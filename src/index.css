@@ -2,25 +2,38 @@
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
-    font-family: "Quicksand";
-    color: #333;
+    font-family: "Poppins";
+    font-weight: 300;
+    color: rgb(15, 29, 64)
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-section span {
+    font-weight: 600;
 }
 
 /* navbar */
 .navbar {
-    padding: 20px;
     display: flex;
     align-items: center;
-    max-width: 600px;
+    /*max-width: 600px;*/
     margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
+    padding: 20px;
+    border-bottom: 2px solid #f2f2f2;
 }
 
 .navbar h1 {
     color: #f1356d;
+    font-family: Quicksand;
+    font-weight: 700;
 }
 
 .navbar .links {
@@ -37,19 +50,68 @@
     color: #f1356d;
 }
 
-/* available tools section */
-.available-tools {
-    margin: 25px;
+/* all content */
+.content {
+    margin: 30px;
+}
+
+/* hero section */
+.hero-section {
+    display: flex;
     padding: 10px;
 }
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-section p {
+    color: #455466;
+    font-weight: ;
+}
+
+/* available tools section */
+.available-tools {
+    padding: 10px;
+}
+
 .tool-cards {
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
     margin: 0px;
     padding: 0px;
 }
+
 .tool-card {
     margin: 12px;
     padding: 20px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-  }
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.tool-card:hover {
+    margin: 12px;
+    padding: 20px;
+    box-shadow: 1px 3px 5px rgba(241, 53, 109, 1);
+}
+
+/* text colour gradient */
+.insta-colour-gradient {
+    background: -webkit-linear-gradient(45deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.twitter-colour-gradient {
+    background: -webkit-linear-gradient(90deg, #7cafd1,#4baeee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
