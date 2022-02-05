@@ -18,6 +18,7 @@
 
 .post-spacer {
     background-color: #ce2b7b;
+    background: linear-gradient(0deg, #eeca55, #c9772f, #ce2b7b);
 }
 
 .hero-section h1 {
@@ -135,19 +136,24 @@ a:hover {
     background-image: url(../public/haikei-waves.svg);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* available tools section */
 .available-tools {
     padding: 10px;
+}
+
+.available-tools-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.available-tools-text p {
+    width: 50%;
+    color: white;
+}
+
+.available-tools-text h1 {
+    color: white;
 }
 
 .tool-cards {
