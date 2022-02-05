@@ -10,9 +10,7 @@ const HeroSection = () => {
                     Just copy & paste the tweet share link, and we'll email you the video.</p>
                 <a href="#" className="gradient-btn">Start</a>
             </div>
-            <div className="hero-video">
-                <DemoVideo />
-            </div>
+            <DemoVideo />
         </div>
     );
 };

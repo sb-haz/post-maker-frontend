@@ -146,9 +146,9 @@ a:hover {
 }
 
 .hero-video {
+    transform: rotate(2deg); 
     margin-top: 5px;
-    transform: rotate(-1.5deg);
-    transform-origin: center;
+    border: 3px solid #f7c77f;
 }
 
 /* spacer */
@@ -239,6 +239,8 @@ a:hover {
 }
 
 .tool-card img {
+    box-shadow: 5px 4px #e0e0e0;
+    /*box-shadow: 1px 1px 8px grey;*/
     border-radius: 5px;
     max-width: 200px;
 }
