@@ -26,6 +26,8 @@ function App() {
         <Features />
       </div>
 
+      <Footer />
+
     </div>
   );
 }
