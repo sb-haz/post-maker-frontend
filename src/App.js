@@ -21,6 +21,10 @@ function App() {
 
       <div className="spacer waves-bottom"></div>
 
+      <div className="content">
+        
+      </div>
+
     </div>
   );
 }
