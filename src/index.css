@@ -148,9 +148,9 @@ a:hover {
 .hero-video {
     height: 350px;
     width: auto;
-    transform: rotate(2deg); 
+    transform: rotate(2deg);
     margin-top: 5px;
-    border: 2px solid #f7c77f;
+    border: 2px solid rgba(247, 199, 127, 0.5);
 }
 
 /* spacer */
