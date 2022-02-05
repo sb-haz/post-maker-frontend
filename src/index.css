@@ -199,13 +199,28 @@ a:hover {
 
     font-size: 14px;
 
-    z-index: -2; /* move below btn colour gradient */
+    z-index: -2;
+    /* move below btn colour gradient */
 }
 
 .tool-card:hover {
     margin: 12px;
     padding: 20px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tool-new {
+    color: #4ece61;
+    font-weight: bold;
+}
+
+.tool-coming-soon {
+    color: #cf3b3b;
+    font-weight: bold;
+}
+
+.tool-card-title {
+    font-weight: bold;
 }
 
 .tool-card img {
