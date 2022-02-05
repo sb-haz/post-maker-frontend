@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
         <div className="footer">
-            <h1>Post Maker</h1>
-            <p>© 2021 Post Maker — app.postmaker@gmail.com</p>
+            <div className="footer-text">
+                <h1 className="logo footer-logo">Post Maker</h1>
+                <p>© 2021 Post Maker — app.postmaker@gmail.com</p>
+            </div>
             <div className="footer-socials">
                 <h4>Twitter</h4>
                 <h4>Insta</h4>
@@ -11,8 +13,4 @@ const Footer = () => {
     );
 };
 
-export default Foote(
-    <div className="footer">
-
-    </div>
-)
+export default Footer;

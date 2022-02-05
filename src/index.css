@@ -107,7 +107,7 @@ a:hover {
     /*border-bottom: 2px solid #f2f2f2;*/
 }
 
-.navbar h1 {
+.logo {
     color: #f1356d;
     font-family: Quicksand;
     font-weight: 700;
@@ -284,4 +284,31 @@ a:hover {
     flex-direction: column;
     gap: 10px;
     max-width: 220px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: baseline;
+    padding: 25px;
+    gap: 25px;
+}
+
+.footer-logo {
+    font-size: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: baseline;
+    padding: 25px;
+    gap: 25px;
 }

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AvailableTools from './components/AvailableTools';
 import Features from './components/Features';
+import Footer from './Footer';
 
 function App() {
   return (
