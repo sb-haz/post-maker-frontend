@@ -13,12 +13,14 @@ function App() {
         <HeroSection />
       </div>
 
-      <div className="spacer waves"></div>
-      <div className="spacer waves-inverted"></div>
+      <div className="spacer waves-top"></div>
 
       <div className="content post-spacer">
         <AvailableTools />
       </div>
+
+      <div className="spacer waves-bottom"></div>
+
     </div>
   );
 }
