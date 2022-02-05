@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import AvailableTools from './components/AvailableTools';
 import HeroSection from './components/HeroSection';
+import AvailableTools from './components/AvailableTools';
+import Features from './components/Features';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <div className="spacer waves-bottom"></div>
 
       <div className="content">
-        
+        <Features />
       </div>
 
     </div>

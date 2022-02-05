@@ -1,10 +1,10 @@
-const FeatureCard = () => {
-  return (
-      <div className="feature-card">
-          <h1>Feature 1</h1>
-          <p>More info here</p>
-      </div>
-  );
+const FeatureCard = ({ title, body }) => {
+    return (
+        <div className="feature-card">
+            <h2>{title}</h2>
+            <p>{body}</p>
+        </div>
+    );
 };
 
 export default FeatureCard;
