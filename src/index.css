@@ -28,7 +28,7 @@ p {
     text-decoration: none;
     text-align: center;
     padding: 5px;
-    width: 14%;
+    width: 15%;
 
     position: relative;
     /* stops whole bg being coloured */
@@ -198,6 +198,8 @@ a:hover {
     height: fit-content;
 
     font-size: 14px;
+
+    z-index: -2; /* move below btn colour gradient */
 }
 
 .tool-card:hover {

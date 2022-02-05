@@ -3,7 +3,7 @@ const ToolCard = ({ title, body }) => {
         <div className="tool-card">
             <img src="https://via.placeholder.com/200" alt="" />
             <p>NEW</p>
-            <h2>{title}</h2>
+            <h2>{title} Maker</h2>
             <p>{body}</p>
             <a href="#" className="gradient-btn">Use</a>
         </div>

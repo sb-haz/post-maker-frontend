@@ -3,19 +3,19 @@ import ToolCard from "./ToolCard";
 const AvailableTools = () => {
     const toolcardinfo = {
         quote: {
-            title: 'Quote Maker',
+            title: 'Quote',
             body: 'Creates a watermarked image of a tweet, with a resolution of 1080 by 1080 pixels.'
         },
         image: {
-            title: 'Image Maker',
+            title: 'Image',
             body: 'Creates a watermarked image of a tweet w/ an image, with a resolution of 1080 by 1080 pixels.'
         },
         video: {
-            title: 'Video Maker',
+            title: 'Video',
             body: 'Creates a watermarked video of a tweet containing a video, with a resolution of 1080 by 1080 pixels.'
         },
         reel: {
-            title: 'Reel Maker',
+            title: 'Reel',
             body: 'Creates a watermarked video of a tweet containing a video, with a resolution of 1920 by 1080 pixels.'
         },
     }
