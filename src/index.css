@@ -240,6 +240,7 @@ a:hover {
 
 .tool-card img {
     border-radius: 5px;
+    max-width: 200px;
 }
 
 .tool-card a {

@@ -1,7 +1,7 @@
 const ToolCard = ({ title, body }) => {
     return (
         <div className="tool-card">
-            <img src="https://via.placeholder.com/200" alt="" />
+            <img src="/examples/quote_maker.png" alt="image" />
             <p className="tool-new">NEW</p>
             <h2>{title}</h2>
             <p>{body}</p>
