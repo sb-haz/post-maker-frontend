@@ -196,6 +196,13 @@ a:hover {
     min-width: min-content;
 }
 
+.available-tools-text h1 span {
+    color: rgb(40, 40, 40);
+    font-size: 40px;
+    font-weight: 600;
+    min-width: min-content;
+}
+
 .tool-card {
     display: flex;
     flex-wrap: wrap;
@@ -203,7 +210,6 @@ a:hover {
     gap: 15px;
 
     margin: 12px;
-    padding: 20px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 
     border-radius: 25px;
@@ -220,7 +226,6 @@ a:hover {
 
 .tool-card:hover {
     margin: 12px;
-    padding: 20px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -337,6 +342,18 @@ a:hover {
 }
 
 /* media queries */
+@media (max-width: 390px) {
+    .feature-card-title h2 {
+        text-align: right;
+    }
+}
+
+@media (max-width: 415px) {
+    .available-tools-text h1 span {
+        display: block;
+    }
+}
+
 @media (max-width: 500px) {
     .hero-video {
         display: none;
@@ -355,7 +372,12 @@ a:hover {
 
 @media(max-width: 606px) {
     .tool-card {
-        min-width: 70%;
+        min-width: 80%;
+        margin: 15px;
+    }
+
+    .tool-card:hover {
+        margin: 15px;
     }
 
     .tool-card img {
@@ -366,6 +388,12 @@ a:hover {
         margin-top: 20px;
         margin-bottom: -15px;
     }
+
+    .available-tools-text p {
+        width: 80%;
+    }
+
+
 }
 
 @media (max-width: 618px) {
@@ -373,9 +401,6 @@ a:hover {
         min-width: 70%;
     }
 
-    .feature-card p {
-        text-align: justify;
-    }
 
     .footer-logo {
         width: min-content;

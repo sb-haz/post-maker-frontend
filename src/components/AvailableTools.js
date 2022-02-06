@@ -31,32 +31,32 @@ const AvailableTools = () => {
     return (
         <div className="available-tools">
             <div className="content">
-            <div className="available-tools-text">
-                <h1>Available Tools</h1>
-                <p>These tools are free to use as long as you do not abuse them. Make sure you're tweeting with the correct tool. If a tweet does not contain a video, for example, do not use the video creator.</p>
-            </div>
-            <div className="tool-cards">
-                <ToolCard
-                    src={info.quote.img}
-                    availableNow={info.quote.availableNow}
-                    title={info.quote.title}
-                    body={info.quote.body} />
-                <ToolCard
-                    src={info.image.img}
-                    availableNow={info.image.availableNow}
-                    title={info.image.title}
-                    body={info.image.body} />
-                <ToolCard
-                    src={info.video.img}
-                    availableNow={info.video.availableNow}
-                    title={info.video.title}
-                    body={info.video.body} />
-                <ToolCard
-                    src={info.reel.img}
-                    availableNow={info.reel.availableNow}
-                    title={info.reel.title}
-                    body={info.reel.body} />
-            </div>
+                <div className="available-tools-text">
+                    <h1>Available <span>Tools</span></h1>
+                    <p>These tools are free to use as long as you do not abuse them. Make sure you're tweeting with the correct tool. If a tweet does not contain a video, for example, do not use the video creator.</p>
+                </div>
+                <div className="tool-cards">
+                    <ToolCard
+                        src={info.quote.img}
+                        availableNow={info.quote.availableNow}
+                        title={info.quote.title}
+                        body={info.quote.body} />
+                    <ToolCard
+                        src={info.image.img}
+                        availableNow={info.image.availableNow}
+                        title={info.image.title}
+                        body={info.image.body} />
+                    <ToolCard
+                        src={info.video.img}
+                        availableNow={info.video.availableNow}
+                        title={info.video.title}
+                        body={info.video.body} />
+                    <ToolCard
+                        src={info.reel.img}
+                        availableNow={info.reel.availableNow}
+                        title={info.reel.title}
+                        body={info.reel.body} />
+                </div>
             </div>
         </div>
     );
