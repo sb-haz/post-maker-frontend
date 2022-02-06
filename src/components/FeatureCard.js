@@ -1,7 +1,10 @@
-const FeatureCard = ({ title, body }) => {
+const FeatureCard = ({ title, icon, body }) => {
     return (
         <div className="feature-card">
-            <h2>{title}</h2>
+            <div className="feature-card-title">
+                <img src={icon} alt="" />
+                <h2>{title}</h2>
+            </div>
             <p>{body}</p>
         </div>
     );
