@@ -390,6 +390,7 @@ a:hover {
 
     .tool-card img {
         min-width: auto;
+        height: auto;
     }
 
     .features h1 {
