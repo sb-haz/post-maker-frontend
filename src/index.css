@@ -8,10 +8,13 @@
     margin: 0;
     font-family: "Poppins";
     font-weight: 400;
-    color: #0f1d40
+    color: #0f1d40;
 }
 
-/* all content */
+.App {
+    max-width: 2560px;
+}
+
 .content {
     padding: 30px;
 }
@@ -126,7 +129,6 @@ a:hover {
 .navbar a:hover {
     color: #f1356d;
 }
-
 
 /* hero section */
 .hero-section {
@@ -290,7 +292,7 @@ a:hover {
 }
 
 .feature-card {
-    padding: 20px; 
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
