@@ -6,8 +6,8 @@ const Footer = () => {
                 <p>© 2022 Post Maker — app.postmaker@gmail.com</p>
             </div>
             <div className="footer-socials">
-                <h4>Twitter</h4>
-                <h4>Insta</h4>
+                <img src="/icons/twitter-brands.svg" alt="" />
+                {/* <img src="/icons/instagram-brands.svg" alt="" />*/}
             </div>
         </div>
     );
