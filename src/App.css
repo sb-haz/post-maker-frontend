@@ -11,16 +11,36 @@
     color: #0f1d40;
 }
 
-.App {
-    max-width: 2560px;
+p {
+    color: #455466;
+}
+
+a:hover {
+    color: #3a4974;
 }
 
 .content {
+    max-width: 2560px;
     padding: 30px;
 }
 
-p {
-    color: #455466;
+/* spacer */
+.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.waves-top {
+    background-image: url(../public/waves-top.svg);
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
+.waves-bottom {
+    background-image: url(../public/waves-bottom.svg);
 }
 
 .gradient-btn {
@@ -82,44 +102,10 @@ p {
     -webkit-text-fill-color: transparent;
 }
 
-/* spacer */
-.spacer {
-    aspect-ratio: 960/100;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-.waves-top {
-    background-image: url(../public/waves-top.svg);
-    transform: rotate(180deg);
-    transform-origin: center;
-}
-
-.waves-bottom {
-    background-image: url(../public/waves-bottom.svg);
-}
-
-/* hero section */
-.hero-section h1 {
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.hero-section span {
-    font-weight: 600;
-}
-
-a:hover {
-    color: #3a4974;
-}
-
 /* navbar */
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     /*max-width: 600px;*/
     margin: 0 auto;
@@ -148,12 +134,19 @@ a:hover {
 }
 
 /* hero section */
+
 .hero-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
+    gap: 10px;
+}
+
+#hero-title {
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .hero-info {
@@ -347,11 +340,29 @@ a:hover {
     filter: invert(66%) sepia(10%) saturate(134%) hue-rotate(169deg) brightness(96%) contrast(83%);
 }
 
+/* media queries */
+@media (max-width: 1125px) {
+    .hero-section {
+        gap: 40px;
+        margin-bottom: 40px;
+    }
 
-/* make child div bigger than parent content div */
-.full-width {
-    /*https://stackoverflow.com/questions/5581034/is-there-are-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css*/
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
+    .hero-video {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar .links {
+        margin: 0px;
+    }
 }
