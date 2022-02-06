@@ -15,6 +15,10 @@ p {
     color: #455466;
 }
 
+p span {
+    color: #455466;
+}
+
 a:hover {
     color: #3a4974;
 }
@@ -326,6 +330,7 @@ a:hover {
 
 .footer-text {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 25px;
     font-size: 15px;
@@ -350,6 +355,7 @@ a:hover {
     .feature-card-title h2 {
         text-align: right;
     }
+
     .feature-card p {
         text-align: center;
     }
@@ -401,16 +407,23 @@ a:hover {
     .feature-card {
         min-width: 70%;
     }
+}
 
-
-    .footer-logo {
-        width: min-content;
-        text-align: center;
+@media (max-width: 670px) {
+    .footer {
+        padding-bottom: 15px;
     }
 
-    .footer-text p {
-        width: min-content;
-        text-align: center;
+    .footer-text p span:nth-child(2) {
+        display: none;
+    }
+
+    .footer-text p span:nth-child(3) {
+        display: none;
+    }
+
+    .footer img {
+        display: none;
     }
 }
 
