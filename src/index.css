@@ -182,6 +182,7 @@ a:hover {
 .available-tools-text {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
@@ -283,6 +284,7 @@ a:hover {
 .features-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
 }
@@ -311,6 +313,7 @@ a:hover {
 .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 30px;
     padding-left: 40px;
