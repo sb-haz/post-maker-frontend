@@ -1,8 +1,10 @@
-const ToolCard = ({ src, title, body }) => {
+const ToolCard = ({ src, availableNow, title, body }) => {
     return (
         <div className="tool-card">
             <img src={src} alt="image" />
-            <p className="tool-new">NEW</p>
+            {availableNow
+                ? <p className="tool-status">NEW</p>
+                : <p className="tool-status tool-coming-soon">COMING SOON</p>}
             <h2>{title}</h2>
             <p>{body}</p>
             <a href="#" className="gradient-btn">Use</a>
