@@ -23,10 +23,6 @@ p {
     color: #455466;
 }
 
-.post-spacer {
-    background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
-}
-
 .gradient-btn {
     text-decoration: none;
     text-align: center;
@@ -84,6 +80,27 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* spacer */
+.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.waves-top {
+    background-image: url(../public/waves-top.svg);
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
+.waves-bottom {
+    background-image: url(../public/waves-bottom.svg);
 }
 
 /* hero section */
@@ -157,28 +174,10 @@ a:hover {
     border: 2px solid rgba(247, 199, 127, 0.5);
 }
 
-/* spacer */
-.spacer {
-    aspect-ratio: 960/100;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.waves-top {
-    background-image: url(../public/waves-top.svg);
-    transform: rotate(180deg);
-    transform-origin: center;
-}
-
-.waves-bottom {
-    background-image: url(../public/waves-bottom.svg);
-}
-
 /* available tools section */
 .available-tools {
     padding: 10px;
+    background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 }
 
 .available-tools-text {
@@ -346,4 +345,13 @@ a:hover {
 .footer-socials img {
     max-width: 20px;
     filter: invert(66%) sepia(10%) saturate(134%) hue-rotate(169deg) brightness(96%) contrast(83%);
+}
+
+
+/* make child div bigger than parent content div */
+.full-width {
+    /*https://stackoverflow.com/questions/5581034/is-there-are-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css*/
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
 }
