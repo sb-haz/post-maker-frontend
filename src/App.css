@@ -342,15 +342,16 @@ a:hover {
 }
 
 /* media queries */
-@media (max-width: 390px) {
-    .feature-card-title h2 {
-        text-align: right;
-    }
-}
-
 @media (max-width: 415px) {
     .available-tools-text h1 span {
         display: block;
+    }
+
+    .feature-card-title h2 {
+        text-align: right;
+    }
+    .feature-card p {
+        text-align: center;
     }
 }
 

@@ -6,17 +6,17 @@ const Features = () => {
         {
             title: 'Automatically Watermarked',
             icon: '/icons/signature-solid.svg',
-            body: 'A watermark will be applied to all videos and images created. The watermark in videos will be animated, moving from right to left.'
+            body: 'Watermark will be applied to all videos and images created. The watermark in videos will be animated, moving from right to left.'
         },
         {
             title: 'Copy & Paste Caption',
             icon: '/icons/copy-solid.svg',
-            body: `A caption including the tweet author's username will be provided, so that you can credit them in your Instagram post.`
+            body: `Caption including the tweet author's username will be provided, so that you can credit them in your Instagram post.`
         },
         {
-            title: 'Directly Emailed',
+            title: 'Emailed When Ready',
             icon: '/icons/paper-plane-solid.svg',
-            body: 'Videos you create will be sent to the email address you provide. This gives you the freedom to post them at your own pace.'
+            body: 'Videos you create will be sent to your email address. This gives you the freedom to post them at your own pace.'
         },
         {
             title: 'Regular Updates',
