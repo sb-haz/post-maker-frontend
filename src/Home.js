@@ -4,19 +4,21 @@ import Features from './components/Features';
 
 const Home = () => {
     return (
-        <div className="content">
-
-            <HeroSection />
-
+        <>
+            <div className="content">
+                <HeroSection />
+            </div>
             <div className="spacer waves-top full-width"></div>
 
             <div className="post-spacer full-width"><AvailableTools /></div>
 
             <div className="spacer waves-bottom full-width"></div>
 
-            <Features />
+            <div className="content">
+                <Features />
+            </div>
+        </>
 
-        </div>
     );
 };
 

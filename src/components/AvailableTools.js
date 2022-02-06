@@ -30,6 +30,7 @@ const AvailableTools = () => {
 
     return (
         <div className="available-tools">
+            <div className="content">
             <div className="available-tools-text">
                 <h1>Available Tools</h1>
                 <p>These tools are free to use as long as you do not abuse them. Make sure you're tweeting with the correct tool. If a tweet does not contain a video, for example, do not use the video creator.</p>
@@ -55,6 +56,7 @@ const AvailableTools = () => {
                     availableNow={info.reel.availableNow}
                     title={info.reel.title}
                     body={info.reel.body} />
+            </div>
             </div>
         </div>
     );
