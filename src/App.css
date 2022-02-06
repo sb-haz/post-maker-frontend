@@ -330,16 +330,8 @@ a:hover {
     font-size: 20px;
 }
 
-.footer-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-width: min-content;
-    padding-right: 25px;
-    gap: 25px;
-}
 
-.footer-socials img {
+.footer img {
     max-width: 20px;
     filter: invert(66%) sepia(10%) saturate(134%) hue-rotate(169deg) brightness(96%) contrast(83%);
 }
@@ -380,18 +372,35 @@ a:hover {
     .feature-card {
         min-width: 70%;
     }
+
     .feature-card p {
         text-align: justify;
     }
-}
 
-@media (max-width: 685px) {
-    
+    .footer-logo {
+        width: min-content;
+        text-align: center;
+    }
+
+    .footer-text p {
+        width: min-content;
+        text-align: center;
+    }
 }
 
 @media (max-width: 700px) {
     #hero-text-second-line {
         display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-text {
+        justify-content: center;
+        flex-basis: 100%;
+        margin-bottom: 10px;
     }
 }
 
