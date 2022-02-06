@@ -252,9 +252,9 @@ a:hover {
 }
 
 .tool-card img {
-    box-shadow: 5px 4px #e0e0e0;
-    /*box-shadow: 1px 1px 8px grey;*/
-    border-radius: 5px;
+    /*box-shadow: 5px 4px #e0e0e0;
+    box-shadow: 1px 1px 8px grey;
+    border-radius: 5px;*/
     max-width: 100%;
 }
 
