@@ -8,7 +8,7 @@ const HeroSection = () => {
                 <p>Make watermarked quotes & videos that are ready to upload to Instagram.
                     <br />
                     Just copy & paste the tweet share link, and we'll email you the video.</p>
-                <a href="#" className="gradient-btn">Start</a>
+                <a href="" className="gradient-btn">Start</a>
             </div>
             <DemoVideo />
         </div>
