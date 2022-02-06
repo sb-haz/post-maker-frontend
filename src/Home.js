@@ -5,7 +5,7 @@ import Features from './components/Features';
 const Home = () => {
     return (
         <>
-            <div className="content">
+            <div className="content hero-content">
                 <HeroSection />
             </div>
             <div className="spacer waves-top full-width"></div>
