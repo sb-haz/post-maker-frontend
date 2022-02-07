@@ -322,6 +322,52 @@ a:hover {
     filter: invert(74%) sepia(14%) saturate(162%) hue-rotate(172deg) brightness(98%) contrast(82%);
 }
 
+/* quote page */
+.quote-tool .text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quote-tool .text h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.quote-tool .text p {
+    width: 50%;
+}
+
+.quote-tool .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.quote-tool .form-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+
+    font-size: 14px;
+    
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
+
+    padding: 25px; 
+    
+}
+
+.quote-tool .form-card .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 /* footer */
 .footer {
     display: flex;
