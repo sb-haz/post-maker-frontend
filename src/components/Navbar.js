@@ -3,10 +3,10 @@ const Navbar = () => {
         <navbar className="navbar">
             <a href="/"><h1 className="logo insta-colour-gradient">Post Maker</h1></a>
             <div className="links">
-                <a href="/quotes">Quotes</a>
-                <a href="/images">Images</a>
-                <a href="/videos">Videos</a>
-                <a href="/reels">Reels</a>
+                <a href="/quote">Quotes</a>
+                <a href="/image">Images</a>
+                <a href="/video">Videos</a>
+                <a href="/reel">Reels</a>
             </div>
         </navbar>
     );
