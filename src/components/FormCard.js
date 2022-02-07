@@ -1,4 +1,4 @@
-const FormCard = () => {
+const FormCard = ({ useEmail }) => {
     return (
         <div className="form-card">
             <p className="coloured-tag blue">Input</p>
@@ -7,9 +7,16 @@ const FormCard = () => {
                 <input type="text" name="name" />
                 <label>Username</label>
                 <input type="text" name="name" />
+                {useEmail ?
+                    <>
+                        <label>Email</label>
+                        <input type="email" name="email" />
+                    </> : ''
+                }
+
                 <input type="submit" value="Create" />
             </form>
-        </div>
+        </div >
     );
 };
 

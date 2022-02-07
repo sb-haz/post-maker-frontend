@@ -10,7 +10,7 @@ const Tool = ({ title, desc, tag }) => {
                 <p>{desc}</p>
             </div>
             <div className="card-wrapper">
-                <FormCard />
+                {tag === 'render' ? <FormCard useEmail={false} /> : <FormCard useEmail={true} />}
                 {tag === 'render' ? <RenderCard /> : <ExampleCard />}
             </div>
         </div>
