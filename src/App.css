@@ -132,10 +132,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /*max-width: 600px;*/
     margin: 0 auto;
     padding: 20px;
-    /*border-bottom: 2px solid #f2f2f2;*/
 }
 
 .logo {
@@ -419,6 +417,7 @@ a:hover {
     margin-top: 10px;
     margin-bottom: -5px;
     width: 15%;
+    min-width: 120px;
     align-self: center;
 }
 
@@ -590,6 +589,9 @@ a:hover {
     .tool-content .text h1 {
         flex-basis: 100%;
         margin-bottom: 10px; 
+    }
+    .tool-content .text p {
+        width: 100%;
     }
 }
 
