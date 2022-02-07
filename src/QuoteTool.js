@@ -1,4 +1,5 @@
-import React from 'react';
+import FormCard from "./components/FormCard";
+import ExampleCard from "./components/ExampleCard";
 
 const QuoteTool = () => {
     return (
@@ -8,19 +9,8 @@ const QuoteTool = () => {
                 <p>Simply share a tweet link to make a quote image. The image will be produced in a 1:1 format with a watermark. Scroll down after clicking the button to see the result.</p>
             </div>
             <div className="card-wrapper">
-                <div className="form-card">
-                    <p className="coloured-tag blue">INPUT</p>
-                    <form className="form">
-                        <label>Tweet URL:</label>
-                        <input type="text" name="name" />
-                        <label>Username:</label>
-                        <input type="text" name="name" />
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
-                <div className="render-card">
-                    <h1>Example</h1>
-                </div>
+                <FormCard />
+                <ExampleCard />
             </div>
         </div>
     );
