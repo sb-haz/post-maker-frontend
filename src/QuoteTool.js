@@ -9,7 +9,7 @@ const QuoteTool = () => {
             </div>
             <div className="card-wrapper">
                 <div className="form-card">
-                    <p>INPUT</p>
+                    <p className="coloured-tag blue">INPUT</p>
                     <form className="form">
                         <label>Tweet URL:</label>
                         <input type="text" name="name" />

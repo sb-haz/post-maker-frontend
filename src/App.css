@@ -106,6 +106,25 @@ a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+/* tags */
+.coloured-tag {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.green {
+    color: #0cb425;
+}
+
+.red {
+    color: #cf3b3b
+}
+
+.blue {
+    color: #3b94cf
+}
+
 /* navbar */
 .navbar {
     display: flex;
@@ -353,13 +372,13 @@ a:hover {
     gap: 15px;
 
     font-size: 14px;
-    
+
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 
-    padding: 25px; 
-    
+    padding: 25px;
+
 }
 
 .quote-tool .form-card .form {
