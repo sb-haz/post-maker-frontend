@@ -1,12 +1,18 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <navbar className="navbar">
-            <a href="/"><h1 className="logo insta-colour-gradient">Post Maker</h1></a>
+            <NavLink to='/'><h1 className="logo insta-colour-gradient">Post Maker</h1></NavLink>
             <div className="links">
-                <a href="/quote">Quotes</a>
-                <a href="/image">Images</a>
-                <a href="/video">Videos</a>
-                <a href="/reel">Reels</a>
+                <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
+                    to='/quote'>Quote</NavLink>
+                <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
+                    to='/image'>Image</NavLink>
+                <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
+                    to='/video'>Video</NavLink>
+                <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
+                    to='/reel'>Reel</NavLink>
             </div>
         </navbar>
     );
