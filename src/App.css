@@ -344,16 +344,28 @@ a:hover {
 }
 
 /* quote page */
+.quote-tool {
+    margin: 45px;
+    margin-bottom: 50px;
+}
+
 .quote-tool .text {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .quote-tool .text h1 {
     font-size: 40px;
     font-weight: 600;
+
+    /*
+    height: fit-content;
+    border-bottom: solid 10px #ccc;
+    border-bottom-right-radius: 10px; 
+    border-bottom-width: 8px;
+    */
 }
 
 .quote-tool .text p {
@@ -365,6 +377,7 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 50px;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -375,7 +388,7 @@ a:hover {
     flex-grow: 7;
     gap: 30px;
     padding: 25px;
-    margin: 20px 10px 20px 20px;
+    margin: 0px 15px 0px 0px;
 
     font-size: 14px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -417,7 +430,7 @@ a:hover {
     flex-grow: 3;
     gap: 30px;
     padding: 25px;
-    margin: 20px 10px 20px 20px;
+    margin: 0px 0px 0px 15px;
     width: min-content;
 
     font-size: 14px;
@@ -429,6 +442,7 @@ a:hover {
 
 .example-card img {
     max-width: 100%;
+    border-radius: 15px;
 }
 
 /* footer */
@@ -529,6 +543,12 @@ a:hover {
     }
 }
 
+@media (max-width: 650px) {
+    .quote-tool {
+        margin: 0px;
+    }
+}
+
 @media (max-width: 670px) {
     .footer {
         padding-bottom: 15px;
@@ -563,6 +583,17 @@ a:hover {
     }
 }
 
+@media (max-width: 850px) {
+    .quote-tool .text {
+        justify-content: center;
+        text-align: center;
+    }
+    .quote-tool .text h1 {
+        flex-basis: 100%;
+        margin-bottom: 10px; 
+    }
+}
+
 @media (max-width: 870px) {
     .available-tools-text {
         text-align: center;
@@ -592,4 +623,21 @@ a:hover {
     .hero-content {
         margin-bottom: -40px;
     }
+}
+
+@media (max-width: 1100px) {
+    .card-wrapper {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .card-wrapper .form-card {
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+
+    .card-wrapper .example-card {
+        margin-left: 0px;
+    }
+
 }
