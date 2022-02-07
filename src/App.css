@@ -344,19 +344,19 @@ a:hover {
 }
 
 /* quote page */
-.quote-tool {
+.tool-content {
     margin: 45px;
     margin-bottom: 50px;
 }
 
-.quote-tool .text {
+.tool-content .text {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.quote-tool .text h1 {
+.tool-content .text h1 {
     font-size: 40px;
     font-weight: 600;
 
@@ -368,11 +368,11 @@ a:hover {
     */
 }
 
-.quote-tool .text p {
+.tool-content .text p {
     width: 50%;
 }
 
-.quote-tool .card-wrapper {
+.tool-content .card-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -381,7 +381,7 @@ a:hover {
     align-items: flex-start;
 }
 
-.quote-tool .form-card {
+.tool-content .form-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -396,19 +396,19 @@ a:hover {
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 }
 
-.quote-tool .form-card .form {
+.tool-content .form-card .form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.quote-tool .form-card .form label {
+.tool-content .form-card .form label {
     font-size: 16px;
     font-weight: 500;
     color: #353535;
 }
 
-.quote-tool .form-card .form input {
+.tool-content .form-card .form input {
     height: 40px;
     border: none;
     border: solid 1px #ccc;
@@ -416,7 +416,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.quote-tool .form-card .form input:last-child {
+.tool-content .form-card .form input:last-child {
     margin-top: 10px;
     margin-bottom: -5px;
     width: 15%;
@@ -544,7 +544,7 @@ a:hover {
 }
 
 @media (max-width: 650px) {
-    .quote-tool {
+    .tool-content {
         margin: 0px;
     }
 }
@@ -584,11 +584,11 @@ a:hover {
 }
 
 @media (max-width: 850px) {
-    .quote-tool .text {
+    .tool-content .text {
         justify-content: center;
         text-align: center;
     }
-    .quote-tool .text h1 {
+    .tool-content .text h1 {
         flex-basis: 100%;
         margin-bottom: 10px; 
     }
