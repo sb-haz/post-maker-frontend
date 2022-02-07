@@ -1,8 +1,11 @@
-const ExampleCard = () => {
+const ExampleCard = ({ media_src }) => {
     return (
         <div className="example-card">
             <h1 className="coloured-tag blue">Example</h1>
-            <img src="/examples/quote_maker.png" alt="" />
+            <video src={media_src} autoPlay muted playsinline loop >
+                <source src={media_src}
+                    type="video/mp4" />
+            </video>
         </div>
     );
 };
