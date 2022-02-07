@@ -1,12 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import './App.css';
+
 import Navbar from './components/Navbar';
 import Home from './Home';
-import Tool from './Tool'
-// import QuoteTool from './QuoteTool';
-// import ImageTool from './ImageTool';
-// import VideoTool from './VideoTool';
-// import ReelTool from './ReelTool';
+import Tool from './Tool';
 import Footer from './Footer';
 
 function App() {
@@ -39,13 +37,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/quote' element={<Tool type={makers.quote.type} title={makers.quote.title} desc={makers.quote.desc} tag={makers.quote.tag} />} />
-        <Route path='/image' element={<Tool type={makers.image.type} title={makers.image.title} desc={makers.image.desc} tag={makers.image.tag} />} />
-        <Route path='/video' element={<Tool type={makers.video.type} title={makers.video.title} desc={makers.video.desc} tag={makers.video.tag} />} />
-        <Route path='/reel' element={<Tool type={makers.reel.type} title={makers.reel.title} desc={makers.reel.desc} tag={makers.reel.tag} />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/quote' element={<Tool type={makers.quote.type} title={makers.quote.title} desc={makers.quote.desc} tag={makers.quote.tag} />} />
+          <Route path='/image' element={<Tool type={makers.image.type} title={makers.image.title} desc={makers.image.desc} tag={makers.image.tag} />} />
+          <Route path='/video' element={<Tool type={makers.video.type} title={makers.video.title} desc={makers.video.desc} tag={makers.video.tag} />} />
+          <Route path='/reel' element={<Tool type={makers.reel.type} title={makers.reel.title} desc={makers.reel.desc} tag={makers.reel.tag} />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </>
   );

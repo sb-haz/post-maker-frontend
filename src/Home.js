@@ -8,6 +8,7 @@ const Home = () => {
             <div className="content hero-content">
                 <HeroSection />
             </div>
+            
             <div className="spacer waves-top full-width"></div>
 
             <div className="post-spacer full-width"><AvailableTools /></div>

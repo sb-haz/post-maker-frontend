@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ToolCard = ({ src, availableNow, title, body }) => {
     return (
         <div className="tool-card">
@@ -7,7 +9,7 @@ const ToolCard = ({ src, availableNow, title, body }) => {
                 : <p className="coloured-tag red">COMING SOON</p>}
             <h2>{title}</h2>
             <p>{body}</p>
-            <a href="" className="gradient-btn">Use</a>
+            <Link to="/quote" className="gradient-btn">Use</Link>
         </div>
     );
 };
