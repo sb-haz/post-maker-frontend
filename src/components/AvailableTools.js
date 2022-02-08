@@ -37,7 +37,7 @@ const AvailableTools = () => {
             <div className="content">
                 <div className="available-tools-text">
                     <h1>Available <span>Tools</span></h1>
-                    <p>These tools are free to use as long as you do not abuse them. Make sure you're tweeting with the correct tool. If a tweet does not contain a video, for example, do not use the video creator.</p>
+                    <p>Say bye to screenshotting, editing apps, downloading videos. Let us handle the hard work.</p>
                 </div>
                 <div className="tool-cards">
                     <ToolCard

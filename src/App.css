@@ -41,7 +41,7 @@ a:hover {
 
 .divider-animated-waves-green {
     background-image: url(../public/dividers/animated-waves-green.svg);
-    margin-top: 60px; 
+    margin-top: 60px;
     margin-bottom: -1px;
 }
 
@@ -514,15 +514,11 @@ a:hover {
     /* z-index only works on positioned elements*/
     position: relative;
     z-index: 0;
+    gap: 30px;
 }
 
 .pricing-table table {
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: fixed;
-    max-width: 600px;
-    margin-bottom: 20px;
 }
 
 /* trial button*/
@@ -532,7 +528,6 @@ a:hover {
 
 /* row padding */
 .pricing-table th, td {
-    text-align: left;
     padding: 16px;
 }
 
@@ -552,6 +547,21 @@ a:hover {
 /* bold sub types */
 .pricing-table tr th {
     font-weight: 600;
+}
+
+/* free tier */
+.pricing-table tr th:nth-child(2) {
+    font-size: 16px;
+    color: rgb(65, 65, 65);
+}
+
+/* creator tier */
+.pricing-table tr th:nth-child(3) {
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* bold benefits */
@@ -577,6 +587,12 @@ a:hover {
 
     .feature-card p {
         text-align: center;
+    }
+}
+
+@media (max-width: 475px) {
+    .pricing-table table tr td {
+        font-size: calc(0.75em + 1vmin);
     }
 }
 
