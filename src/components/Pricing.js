@@ -41,11 +41,6 @@ const Pricing = () => {
                         <td>Default</td>
                         <td>Priority</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                 </table>
 
                 <div className="trial-btn">
