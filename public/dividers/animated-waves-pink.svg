@@ -2,7 +2,7 @@
     viewBox="0 210 1440 175">
     <style>
         .path-1 {
-            animation: pathAnim-1 8s;
+            animation: pathAnim-1 6s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -29,18 +29,14 @@
             }
         }
     </style>
-    <style class="darkreader darkreader--sync" media="screen" />
     <defs>
         <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-            <stop offset="0%" stop-color="#ffd466ff" data-darkreader-inline-stopcolor=""
-                style="--darkreader-inline-stopcolor:#8f6700;" />
-            <stop offset="100%" stop-color="#ff7ebaff" data-darkreader-inline-stopcolor=""
-                style="--darkreader-inline-stopcolor:#80003c;" />
+            <stop offset="0%" stop-color="#ffd466ff" />
+            <stop offset="100%" stop-color="#ff7ebaff" />
         </linearGradient>
     </defs>
     <path
         d="M 0,400 C 0,400 0,266 0,266 C 77.68421052631578,250.32535885167465 155.36842105263156,234.65071770334927 262,228 C 368.63157894736844,221.34928229665073 504.2105263157895,223.7224880382775 605,236 C 705.7894736842105,248.2775119617225 771.7894736842106,270.4593301435406 859,275 C 946.2105263157894,279.5406698564594 1054.6315789473683,266.4401913875598 1155,262 C 1255.3684210526317,257.5598086124402 1347.6842105263158,261.7799043062201 1440,266 C 1440,266 1440,400 1440,400 Z"
         stroke="none" stroke-width="0" fill="url(#gradient)"
-        class="transition-all duration-300 ease-in-out delay-150 path-1" data-darkreader-inline-stroke=""
-        style="--darkreader-inline-stroke:none;" />
+        class="transition-all duration-300 ease-in-out delay-150 path-1" data-darkreader-inline-stroke="" />
 </svg>
