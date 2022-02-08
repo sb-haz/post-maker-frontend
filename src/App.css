@@ -30,21 +30,16 @@ a:hover {
 
 /* spacer */
 .spacer {
-    aspect-ratio: 960/100;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    aspect-ratio: 1440/176; 
 }
 
-.waves-top {
-    background-image: url(../public/waves-top.svg);
-    transform: rotate(180deg);
-    transform-origin: center;
+.divider-animated-waves {
+    background-image: url(../public/dividers/animated-waves.svg);
+    margin-top: 15px; 
 }
 
-.waves-bottom {
-    background-image: url(../public/waves-bottom.svg);
+.divider-tilted-triange {
+    background-image: url(../public/dividers/tilted-triange.svg);
 }
 
 .gradient-btn {
@@ -201,7 +196,9 @@ a:hover {
 
 /* available tools section */
 .available-tools {
-    background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
+    background:
+        linear-gradient(to top, #ff7eba, rgba(255, 255, 255, 0)),
+        linear-gradient(to right, #ffd466, #ff7eba);
 }
 
 .available-tools-text {
@@ -445,7 +442,7 @@ a:hover {
 
 .example-card video {
     max-width: 100%;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
 /* footer */
@@ -621,15 +618,11 @@ a:hover {
 
     .hero-section {
         gap: 40px;
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
     }
 
     .hero-video {
         transform: rotate(0deg);
-    }
-
-    .hero-content {
-        margin-bottom: -40px;
     }
 }
 
