@@ -527,6 +527,18 @@ a:hover {
 
 .pricing-table table {
     border-collapse: collapse;
+    min-width: 500px;
+}
+
+/*https://dev.to/temmietope/rounded-edges-on-table-rows-1d0n*/
+td:first-child,
+th:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+td:last-child,
+th:last-child {
+    border-radius: 0 15px 15px 0;
 }
 
 /* trial button*/
@@ -651,6 +663,10 @@ a:hover {
 
     .navbar .links {
         margin: 0px;
+    }
+
+    .pricing-table table {
+        min-width: 0px;
     }
 }
 
