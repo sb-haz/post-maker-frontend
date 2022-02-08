@@ -342,6 +342,7 @@ a:hover {
 .feature-card-title {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     font-size: 14px;
 }
@@ -581,10 +582,7 @@ a:hover {
         display: block;
     }
 
-    .feature-card-title h2 {
-        text-align: right;
-    }
-
+    .feature-card-title h2,
     .feature-card p {
         text-align: center;
     }
