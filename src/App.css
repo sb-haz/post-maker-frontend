@@ -55,7 +55,7 @@ a:hover {
 .gradient-btn {
     text-decoration: none;
     text-align: center;
-    padding: 5px;
+    padding: 6px;
     width: 15%;
 
     position: relative;
@@ -80,6 +80,11 @@ a:hover {
 
 .gradient-btn:hover::after {
     background: linear-gradient(5deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
+}
+
+.pricing-btn {
+    z-index: 1;
+    width: 100%;
 }
 
 /* text colour gradient */
@@ -536,7 +541,20 @@ a:hover {
     font-weight: 500;
 }
 
-.blur-price { 
+.pricing-table tr:last-child {
+    background-color: white;
+}
+
+.pricing-table tr:last-child td:last-child {
+    height: 50px;
+}
+
+.pricing-table tr td:last-child a {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.blur-price {
     color: transparent;
     text-shadow: 0 0 8px #000;
 }

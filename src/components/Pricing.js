@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Pricing = () => {
     return (
         <div className="content pricing-section">
@@ -42,7 +44,7 @@ const Pricing = () => {
                     <tr>
                         <td></td>
                         <td></td>
-                        <td><button>Start</button></td>
+                        <td><Link to='/' className="gradient-btn pricing-btn">Start</Link></td>
                     </tr>
                 </table>
             </div>
