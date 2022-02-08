@@ -40,7 +40,7 @@ a:hover {
 
 .divider-animated-waves-green {
     background-image: url(../public/dividers/animated-waves-green.svg);
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .divider-animated-waves-footer {
@@ -307,7 +307,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    margin-top: 50px;
 }
 
 .features h1 {
@@ -491,9 +491,8 @@ a:hover {
 
 .pricing-section {
     background:
-        linear-gradient(to top, #fff, rgba(255, 255, 255, 0)),
+        linear-gradient(to top, #fff 60%, rgba(255, 255, 255, 0)),
         linear-gradient(to right, #7BDCB5, #fff);
-    height: 1200px;
 }
 
 .pricing-section h1 {
@@ -501,7 +500,45 @@ a:hover {
     font-weight: 600;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 30px;
     color: rgb(27, 27, 27);
+}
+
+.pricing-table table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 50%;
+}
+
+.pricing-table th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.pricing-table tr th,
+.pricing-table tr td:nth-child(2),
+.pricing-table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.pricing-table tr th {
+    font-weight: 600;
+}
+
+.pricing-table tr td:nth-child(1) {
+    font-weight: 500;
+}
+
+.blur-price { 
+    color: transparent;
+    text-shadow: 0 0 8px #000;
 }
 
 /* media queries */
