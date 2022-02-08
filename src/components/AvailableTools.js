@@ -37,7 +37,7 @@ const AvailableTools = () => {
             <div className="content">
                 <div className="available-tools-text">
                     <h1>Available <span>Tools</span></h1>
-                    <p>Say bye to screenshotting, editing apps, downloading videos. Let us handle the hard work.</p>
+                    <p>Say bye to screenshotting, editing apps & downloading videos.<br />Let us handle the heavy work so you can focus on growing your page.</p>
                 </div>
                 <div className="tool-cards">
                     <ToolCard
