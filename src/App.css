@@ -38,9 +38,14 @@ a:hover {
     margin-top: 15px;
 }
 
-.divider-animated-waves-light-pink {
-    background-image: url(../public/dividers/animated-waves-light-pink.svg);
+.divider-animated-waves-green {
+    background-image: url(../public/dividers/animated-waves-green.svg);
     margin-top: 15px;
+}
+
+.divider-animated-waves-footer {
+    margin-top: 20px;
+    background-image: url(../public/dividers/animated-waves-footer.svg);
 }
 
 .divider-tilted-triange {
@@ -459,7 +464,10 @@ a:hover {
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 75px;
+
+    background:
+        linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 0%),
+        linear-gradient(to right, #fff 30%, #ce2b7b);
 }
 
 .footer-text {
@@ -477,13 +485,14 @@ a:hover {
 
 .footer img {
     max-width: 20px;
-    filter: invert(66%) sepia(10%) saturate(134%) hue-rotate(169deg) brightness(96%) contrast(83%);
+    /*https://codepen.io/sosuke/pen/Pjoqqp*/
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(100%) contrast(103%);
 }
 
 .pricing-section {
     background:
         linear-gradient(to top, #fff, rgba(255, 255, 255, 0)),
-        linear-gradient(to right, #F17EBA, #fff);
+        linear-gradient(to right, #7BDCB5, #fff);
     height: 1200px;
 }
 
@@ -492,8 +501,7 @@ a:hover {
     font-weight: 600;
     text-align: center;
     margin-top: 40px;
-    color: black;
-    text-shadow: 3px 3px 3px #dddddd;
+    color: rgb(27, 27, 27);
 }
 
 /* media queries */
@@ -573,6 +581,10 @@ a:hover {
 @media (max-width: 670px) {
     .footer {
         padding-bottom: 15px;
+    }
+
+    .footer-text p span:nth-child(1) {
+        color: #262626;
     }
 
     .footer-text p span:nth-child(2) {

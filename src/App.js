@@ -41,6 +41,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <ScrollToTop>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -50,6 +51,8 @@ function App() {
           <Route path='/reel' element={<Tool type={makers.reel.type} title={makers.reel.title} desc={makers.reel.desc} tag={makers.reel.tag} media_src={makers.reel.media_src} />} />
         </Routes>
       </ScrollToTop>
+
+      <div className="spacer divider-animated-waves-footer"></div>
       <Footer />
     </>
   );

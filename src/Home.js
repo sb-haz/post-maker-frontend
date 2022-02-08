@@ -20,7 +20,7 @@ const Home = () => {
                 <Features />
             </div>
 
-            <div className="spacer divider-animated-waves-light-pink"></div>
+            <div className="spacer divider-animated-waves-green"></div>
 
             <Pricing />
         </>
