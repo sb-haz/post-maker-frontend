@@ -525,6 +525,13 @@ a:hover {
     gap: 30px;
 }
 
+.pricing-table .table-wrapper {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+}
+
 .pricing-table table {
     border-collapse: collapse;
     min-width: 500px;
@@ -694,7 +701,10 @@ th:last-child {
         width: 80%;
     }
 
-
+    .pricing-table .table-wrapper {
+        padding: 0px;
+        box-shadow: none;
+    }
 }
 
 @media (max-width: 618px) {
