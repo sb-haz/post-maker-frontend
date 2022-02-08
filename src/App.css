@@ -82,11 +82,6 @@ a:hover {
     background: linear-gradient(5deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
 }
 
-.pricing-btn {
-    z-index: 1;
-    width: 100%;
-}
-
 /* text colour gradient */
 .insta-colour-gradient {
     background: -webkit-linear-gradient(45deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
@@ -509,51 +504,59 @@ a:hover {
     color: rgb(27, 27, 27);
 }
 
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* z-index only works on positioned elements*/
+    position: relative;
+    z-index: 0;
+}
+
 .pricing-table table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
-    width: 50%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
+/* trial button*/
+.pricing-table a {
+    width: auto;
+}
+
+/* row padding */
 .pricing-table th, td {
     text-align: left;
     padding: 16px;
 }
 
+/* striped rows */
 .pricing-table tr:nth-child(even) {
     background-color: #f2f2f2;
     border-radius: 10px;
 }
 
+/* center text */
 .pricing-table tr th,
 .pricing-table tr td:nth-child(2),
 .pricing-table tr td:nth-child(3) {
     text-align: center;
 }
 
+/* bold sub types */
 .pricing-table tr th {
     font-weight: 600;
 }
 
+/* bold benefits */
 .pricing-table tr td:nth-child(1) {
     font-weight: 500;
 }
 
-.pricing-table tr:last-child {
-    background-color: white;
-}
-
-.pricing-table tr:last-child td:last-child {
-    height: 50px;
-}
-
-.pricing-table tr td:last-child a {
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
+/* blur price */
 .blur-price {
     color: transparent;
     text-shadow: 0 0 8px #000;

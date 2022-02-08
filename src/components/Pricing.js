@@ -44,9 +44,11 @@ const Pricing = () => {
                     <tr>
                         <td></td>
                         <td></td>
-                        <td><Link to='/' className="gradient-btn pricing-btn">Start</Link></td>
+                        <td></td>
                     </tr>
                 </table>
+                
+                <Link to='/' className="pricing-btn gradient-btn">Start 30 Day Trial</Link>
             </div>
         </div>
     );
