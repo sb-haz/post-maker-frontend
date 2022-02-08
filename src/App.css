@@ -135,6 +135,12 @@ a:hover {
     color: #3b94cf
 }
 
+/* non movable */
+.unselectable {
+    pointer-events: none;
+    user-select: none;
+}
+
 /* navbar */
 .navbar {
     display: flex;
@@ -546,6 +552,12 @@ a:hover {
     text-align: center;
 }
 
+/* text colour */
+.pricing-table tr td:nth-child(2),
+.pricing-table tr td:nth-child(3) {
+    color: #455466;
+}
+
 /* bold sub types */
 .pricing-table tr th {
     font-weight: 600;
@@ -573,7 +585,7 @@ a:hover {
 
 /* blur price */
 .blur-price {
-    color: transparent;
+    color: transparent !important;
     text-shadow: 0 0 8px #000;
 }
 
@@ -587,8 +599,6 @@ a:hover {
     position: absolute;
     right: 158px;
     top: 6px;
-    pointer-events: none;
-    user-select: none;
 }
 
 .trial-btn p {
@@ -597,7 +607,6 @@ a:hover {
     position: absolute;
     bottom: -30px;
     right: 4px;
-    user-select: none;
 }
 
 /* media queries */
