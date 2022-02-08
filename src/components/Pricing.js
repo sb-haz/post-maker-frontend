@@ -47,8 +47,12 @@ const Pricing = () => {
                         <td></td>
                     </tr>
                 </table>
-                
-                <Link to='/' className="pricing-btn gradient-btn">Start 30 Day Trial</Link>
+
+                <div className="trial-btn">
+                    <Link to='/' className="pricing-btn gradient-btn">Start 30 Day Trial</Link>
+                    <img src="/other/up-arrow.png" alt="" />
+                    <p>No Credit Card Required</p>
+                </div>
             </div>
         </div>
     );

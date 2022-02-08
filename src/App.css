@@ -494,6 +494,7 @@ a:hover {
 }
 
 .pricing-section {
+    margin-bottom: 75px;
     background:
         linear-gradient(to top, #fff 60%, rgba(255, 255, 255, 0)),
         linear-gradient(to right, #7BDCB5, #fff);
@@ -574,6 +575,29 @@ a:hover {
 .blur-price {
     color: transparent;
     text-shadow: 0 0 8px #000;
+}
+
+/* trial btn */
+.trial-btn {
+    position: relative;
+}
+
+.trial-btn img {
+    width: 18px;
+    position: absolute;
+    right: 158px;
+    top: 6px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.trial-btn p {
+    font-size: 12px;
+    color: rgb(155, 155, 155);
+    position: absolute;
+    bottom: -30px;
+    right: 4px;
+    user-select: none;
 }
 
 /* media queries */
