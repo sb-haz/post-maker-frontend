@@ -36,16 +36,19 @@ a:hover {
 .divider-animated-waves-pink {
     background-image: url(../public/dividers/animated-waves-pink.svg);
     margin-top: 15px;
+    margin-bottom: -1px;
 }
 
 .divider-animated-waves-green {
     background-image: url(../public/dividers/animated-waves-green.svg);
-    margin-top: 60px;
+    margin-top: 60px; 
+    margin-bottom: -1px;
 }
 
 .divider-animated-waves-footer {
     margin-top: 20px;
     background-image: url(../public/dividers/animated-waves-footer.svg);
+    margin-bottom: -1px;
 }
 
 .divider-tilted-triange {
