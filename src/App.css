@@ -594,11 +594,18 @@ a:hover {
     position: relative;
 }
 
+.trial-btn a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+}
+
 .trial-btn img {
     width: 18px;
     position: absolute;
-    right: 158px;
-    top: 6px;
+    transform: rotate(-10deg);
+    right: 178px;
+    top: 12px;
 }
 
 .trial-btn p {
@@ -606,7 +613,7 @@ a:hover {
     color: rgb(155, 155, 155);
     position: absolute;
     bottom: -30px;
-    right: 4px;
+    right: 14px;
 }
 
 /* media queries */
