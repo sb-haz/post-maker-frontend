@@ -6,22 +6,22 @@ const Features = () => {
         {
             title: 'Automatically Watermarked',
             icon: '/icons/signature-solid.svg',
-            body: 'Watermark will be applied to all videos and images created. The watermark in videos will be animated, moving from right to left.'
+            body: 'Your watermark will be automatically added to all images and videos you create.'
         },
         {
-            title: 'Copy & Paste Caption',
+            title: 'Copy & Paste Captions',
             icon: '/icons/copy-solid.svg',
-            body: `Caption including the tweet author's username will be provided, so that you can credit them in your Instagram post.`
+            body: `Caption crediting the Tweet author will be provided so you may credit them on your post.`
         },
         {
-            title: 'Emailed When Ready',
+            title: 'Emailed Directly To You',
             icon: '/icons/paper-plane-solid.svg',
-            body: 'Videos you create will be sent to your email address. This gives you the freedom to post them at your own pace.'
+            body: 'Videos you create will be sent to your email address. Download and post them at your own pace.'
         },
         {
             title: 'Regular Updates',
             icon: '/icons/wrench-solid.svg',
-            body: `With user accounts you won't have to enter your email or username every time. Watermarks can also be fully customised.`
+            body: `New features are being added regularly. Look out for watermark & caption customisation.`
         }]
 
     return (

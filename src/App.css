@@ -35,6 +35,11 @@ a:hover {
     border-radius: 15px;
 }
 
+.shadow-light {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 15px;
+}
+
 /* spacer */
 .spacer {
     aspect-ratio: 1440/175;
@@ -348,19 +353,30 @@ a:hover {
     flex-direction: column;
     gap: 10px;
     max-width: 220px;
+    text-align: center;
 }
 
 .feature-card-title {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     font-size: 14px;
+    align-items: center;
 }
 
 .feature-card-title img {
     max-width: 35px;
     filter: invert(74%) sepia(14%) saturate(162%) hue-rotate(172deg) brightness(98%) contrast(82%);
+    flex-basis: 100%;
+}
+
+.feature-card h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.feature-card p {
+    font-size: 14px;
 }
 
 /* quote page */
@@ -702,7 +718,8 @@ th:last-child {
 
     .pricing-table .table-wrapper {
         padding: 0px;
-        box-shadow: none;
+        /* .shadow-light */
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 }
 
