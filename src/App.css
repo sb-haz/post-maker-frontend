@@ -521,7 +521,7 @@ a:hover {
     /* z-index only works on positioned elements*/
     position: relative;
     z-index: 0;
-    gap: 40px;
+    gap: 65px;
 }
 
 .pricing-table .table-wrapper {
