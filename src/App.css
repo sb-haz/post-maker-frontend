@@ -744,14 +744,8 @@ th:last-child {
         color: #262626;
     }
 
-    .footer-text p span:nth-child(2) {
-        display: none;
-    }
-
-    .footer-text p span:nth-child(3) {
-        display: none;
-    }
-
+    .footer-text p span:nth-child(2),
+    .footer-text p span:nth-child(3),
     .footer img {
         display: none;
     }
@@ -762,12 +756,11 @@ th:last-child {
         display: none;
     }
 
-    .footer {
+    .footer, .footer-text {
         justify-content: center;
     }
 
     .footer-text {
-        justify-content: center;
         flex-basis: 100%;
         margin-bottom: 10px;
     }
@@ -808,7 +801,6 @@ th:last-child {
 
     .hero-section {
         gap: 40px;
-        /*margin-bottom: 40px;*/
     }
 
     .hero-video {
