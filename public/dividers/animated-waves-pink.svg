@@ -2,7 +2,7 @@
     viewBox="0 210 1440 175">
     <style>
         .path-1 {
-            animation: pathAnim-1 6s;
+            animation: pathAnim-1 8s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
