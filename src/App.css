@@ -601,11 +601,18 @@ a:hover {
 .pricing-table tr td:nth-child(2),
 .pricing-table tr td:nth-child(3) {
     color: #455466;
+    font-size: 14px;
 }
 
 /* bold sub types */
 .pricing-table tr th {
     font-weight: 600;
+}
+
+/* benefit ticks crosses */
+.pricing-tick-cross {
+    width: auto;
+    max-width: 11px;
 }
 
 /* free tier */
@@ -675,7 +682,7 @@ a:hover {
 
 @media (max-width: 475px) {
     .pricing-table table tr td {
-        font-size: calc(0.75em + 1vmin);
+        /*font-size: calc(0.75em + 1vmin);*/
     }
 }
 

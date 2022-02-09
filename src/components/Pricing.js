@@ -20,17 +20,17 @@ const Pricing = () => {
                         <tr>
                             <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Video</td>
                             <td>3 per day</td>
-                            <td>✔</td>
+                            <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross"/></td>
                         </tr>
                         <tr>
                             <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Quote</td>
-                            <td>✔</td>
-                            <td>✔</td>
+                            <td>10 per day</td>
+                            <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross"/></td>
                         </tr>
                         <tr>
                             <td><img src="/icons/pricing-tiktok.png" className="unselectable" alt="" />Video</td>
-                            <td>✘</td>
-                            <td>✔</td>
+                            <td><img src="/icons/pricing-cross.png" alt="" className="pricing-tick-cross"/></td>
+                            <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross"/></td>
                         </tr>
                         <tr>
                             <td>Render Speed</td>
