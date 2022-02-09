@@ -33,11 +33,6 @@ const Pricing = () => {
                             <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross"/></td>
                         </tr>
                         <tr>
-                            <td>Accounts</td>
-                            <td>5</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
                             <td>Render Speed</td>
                             <td>Default</td>
                             <td>Priority</td>
