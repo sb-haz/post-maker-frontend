@@ -368,7 +368,7 @@ a:hover {
 }
 
 .feature-card-title img {
-    max-width: 35px;
+    max-height: 35px;
     filter: invert(74%) sepia(14%) saturate(162%) hue-rotate(172deg) brightness(98%) contrast(82%);
     flex-basis: 100%;
 }
@@ -568,6 +568,7 @@ a:hover {
 /* twitter tiktok icons */
 .pricing-table img {
     width: 16px;
+    margin-right: 2px;
     vertical-align: middle;
 }
 

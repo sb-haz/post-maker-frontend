@@ -11,17 +11,17 @@ const Features = () => {
         {
             title: 'Copy & Paste Captions',
             icon: '/icons/copy-solid.svg',
-            body: `Caption crediting the Tweet author will be provided so you may credit them on your post.`
+            body: `Caption crediting the Tweet or Tiktok author will be provided so you may credit them on your post.`
         },
         {
             title: 'Emailed Directly To You',
             icon: '/icons/paper-plane-solid.svg',
-            body: 'Videos you create will be sent to your email address. Download and post them at your own pace.'
+            body: 'Videos you create will be sent to your email address. Download and post at your own pace.'
         },
         {
             title: 'Regular Updates',
             icon: '/icons/wrench-solid.svg',
-            body: `New features are being added regularly. Look out for watermark & caption customisation.`
+            body: `New features are added regularly. Look out for watermark & caption customisation.`
         }]
 
     return (
