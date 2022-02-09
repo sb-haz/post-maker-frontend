@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Pricing = () => {
     return (
         <div className="content pricing-section">
-            <h1>Pricing</h1>
+            <h1>Simple, Fair Pricing</h1>
             <div className="pricing-table">
                 <div className="table-wrapper shadow">
                     <table>
@@ -31,6 +31,11 @@ const Pricing = () => {
                             <td><img src="/icons/pricing-tiktok.png" className="unselectable" alt="" />Video</td>
                             <td><img src="/icons/pricing-cross.png" alt="" className="pricing-tick-cross"/></td>
                             <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross"/></td>
+                        </tr>
+                        <tr>
+                            <td>Accounts</td>
+                            <td>5</td>
+                            <td>1</td>
                         </tr>
                         <tr>
                             <td>Render Speed</td>

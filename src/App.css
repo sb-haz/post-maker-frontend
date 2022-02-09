@@ -48,8 +48,8 @@ a:hover {
 .divider-animated-waves-pink {
     background-image: url(../public/dividers/animated-waves-pink.svg);
     margin-top: 15px;
-    margin-bottom: -1px;
-    margin-top: -1px;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
 
 .divider-animated-waves-green {
@@ -61,12 +61,14 @@ a:hover {
 .divider-animated-waves-footer {
     margin-top: 20px;
     background-image: url(../public/dividers/animated-waves-footer.svg);
-    margin-bottom: -1px;
     margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 .divider-tilted-triange {
     background-image: url(../public/dividers/tilted-triange.svg);
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 .gradient-btn {
@@ -347,7 +349,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -459,6 +461,7 @@ a:hover {
     width: 15%;
     min-width: 120px;
     align-self: center;
+    background-color: white;
 }
 
 .example-card {
@@ -688,6 +691,9 @@ a:hover {
 
 @media (max-width: 500px) {
     .hero-video {
+        display: none;
+    }
+    .hero-video video {
         display: none;
     }
 }

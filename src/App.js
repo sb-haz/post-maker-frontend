@@ -26,14 +26,14 @@ function App() {
     video: {
       type: 'video',
       title: 'Video Maker',
-      desc: `Share a Tweet link to generate a video. The video will be produced in a 1:1 format with an animated watermark. You will receive the complete video through email.`,
+      desc: `Share a Tweet link to generate a video. The video will be produced in a 1:1 format with an animated watermark.`,
       tag: 'example',
       media_src: '/examples/video_maker.mp4'
     },
     reel: {
       type: 'reel',
       title: 'Reel Maker',
-      desc: `Share a Tweet link to make a reels video. The video will be produced in a 16:9 format with an animated watermark. You will receive the complete video through email.`,
+      desc: `Share a Tweet link to make a reels video. The video will be produced in a 16:9 format with an animated watermark.`,
       tag: 'example',
       media_src: '/examples/reels_maker.mp4'
     }
