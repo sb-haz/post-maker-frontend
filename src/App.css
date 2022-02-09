@@ -504,9 +504,8 @@ a:hover {
     font-size: 20px;
 }
 
-
-.footer img {
-    max-width: 20px;
+.footer a img {
+    height: 18px;
     /*https://codepen.io/sosuke/pen/Pjoqqp*/
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(100%) contrast(103%);
 }
