@@ -40,12 +40,12 @@ const Pricing = () => {
                         <tr>
                             <td>Watermarks</td>
                             <td>Default</td>
-                            <td>Customizable</td>
+                            <td>Customisable</td>
                         </tr>
                         <tr>
                             <td>Captions</td>
                             <td>Default</td>
-                            <td>Customizable</td>
+                            <td>Customisable</td>
                         </tr>
                     </table>
                 </div>
