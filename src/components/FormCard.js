@@ -5,7 +5,7 @@ const FormCard = ({ useEmail }) => {
             <form className="form">
                 <label>Tweet URL</label>
                 <input type="text" name="name" />
-                <label>Username</label>
+                <label>Watermark</label>
                 <input type="text" name="name" />
                 {useEmail ?
                     <>
