@@ -18,17 +18,17 @@ const Pricing = () => {
                             <td className="blur-price">£19/m</td>
                         </tr>
                         <tr>
-                            <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" /> Video</td>
+                            <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Video</td>
                             <td>3 per day</td>
                             <td>✔</td>
                         </tr>
                         <tr>
-                            <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" /> Quote</td>
+                            <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Quote</td>
                             <td>✔</td>
                             <td>✔</td>
                         </tr>
                         <tr>
-                            <td><img src="/icons/pricing-tiktok.png" className="unselectable" alt="" /> Video</td>
+                            <td><img src="/icons/pricing-tiktok.png" className="unselectable" alt="" />Video</td>
                             <td>✘</td>
                             <td>✔</td>
                         </tr>
