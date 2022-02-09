@@ -100,31 +100,35 @@ a:hover {
 
 /* text colour gradient */
 .insta-colour-gradient {
-    background: -webkit-linear-gradient(45deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(45deg, #dabd5e, #c9772f, #ce2b7b, #9d1cff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .insta-colour-gradient:hover {
     background: -webkit-linear-gradient(75deg, #eeca55, #ce2b7b);
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .twitter-colour-gradient {
-    background: -webkit-linear-gradient(45deg, #50cdff, #329ce2);
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(45deg, #7dd9fd, #0099ff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/*
 .twitter-colour-gradient:hover {
     background: -webkit-linear-gradient(45deg, #60c9f3, #117ac0);
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+*/
+
+.tiktok-colour-gradient {
+    text-shadow:
+        -2px -1px 2px #6ef4ed,
+        2px 1px 2px #ec2c57;
 }
 
 /* tags */
@@ -203,7 +207,8 @@ a:hover {
     gap: 10px;
 }
 
-#hero-title {
+.hero-title,
+.hero-title span {
     font-size: 40px;
     font-weight: 600;
 }
@@ -762,7 +767,7 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-    #hero-text-second-line {
+    .hero-info p span {
         display: none;
     }
 
