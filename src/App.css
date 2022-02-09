@@ -766,6 +766,14 @@ a:hover {
         display: none;
     }
 
+    .footer {
+        background: none;
+    }
+
+    .divider-animated-waves-footer {
+        display: none;
+    }
+
     .footer, .footer-text {
         justify-content: center;
     }
