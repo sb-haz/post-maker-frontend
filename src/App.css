@@ -24,7 +24,8 @@ a:hover {
 }
 
 .content {
-    max-width: 2560px;
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 30px;
 }
 
@@ -167,7 +168,6 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .logo {
@@ -693,6 +693,7 @@ a:hover {
     .hero-video {
         display: none;
     }
+
     .hero-video video {
         display: none;
     }
