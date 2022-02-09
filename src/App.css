@@ -44,6 +44,8 @@ a:hover {
 /* spacer */
 .spacer {
     aspect-ratio: 1440/175;
+    /* fix firefox bug */
+    background-repeat: no-repeat;
 }
 
 .divider-animated-waves-pink {
