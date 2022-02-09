@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ToolCard = ({ src, availableNow, title, body, link }) => {
     return (
-        <div className="tool-card">
+        <div className="tool-card shadow">
             <img src={src} className="unselectable" />
             {availableNow
                 ? <p className="coloured-tag green">NEW</p>

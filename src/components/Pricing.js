@@ -5,7 +5,7 @@ const Pricing = () => {
         <div className="content pricing-section">
             <h1>Pricing</h1>
             <div className="pricing-table">
-                <div className="table-wrapper">
+                <div className="table-wrapper shadow">
                     <table>
                         <tr>
                             <th></th>

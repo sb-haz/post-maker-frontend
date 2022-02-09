@@ -1,6 +1,6 @@
 const ExampleCard = ({ media_src }) => {
     return (
-        <div className="example-card">
+        <div className="example-card shadow">
             <h1 className="coloured-tag blue">Example</h1>
             <video src={media_src} autoPlay muted playsinline loop >
                 <source src={media_src}

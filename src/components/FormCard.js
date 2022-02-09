@@ -1,6 +1,6 @@
 const FormCard = ({ useEmail }) => {
     return (
-        <div className="form-card">
+        <div className="form-card shadow">
             <p className="coloured-tag blue">Input</p>
             <form className="form">
                 <label>Tweet URL</label>

@@ -28,6 +28,13 @@ a:hover {
     padding: 30px;
 }
 
+/* cards shadow*/
+.shadow {
+    /*https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+}
+
 /* spacer */
 .spacer {
     aspect-ratio: 1440/175;
@@ -172,7 +179,11 @@ a:hover {
 }
 
 .navbar-active {
-    color: #f1356d;
+    box-shadow:
+        rgba(240, 46, 170, 0.4) 3px 3px 2px,
+        rgba(240, 46, 170, 0.3) 6px 6px 2px,
+        rgba(240, 46, 170, 0.2) 9px 9px 2px,
+        rgba(240, 46, 170, 0.1) 12px 12px 2px;
 }
 
 /* hero section */
@@ -252,25 +263,19 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 15px;
-
     margin: 12px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-
-    border-radius: 25px;
     background: #fff;
     padding: 20px;
     width: 200px;
     height: fit-content;
-
     font-size: 14px;
-
     z-index: 0;
     /* move below btn colour gradient */
 }
 
 .tool-card:hover {
     margin: 12px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .tool-status {
@@ -403,10 +408,7 @@ a:hover {
     gap: 30px;
     padding: 25px;
     margin: 0px 15px 0px 0px;
-
     font-size: 14px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 }
 
@@ -447,10 +449,7 @@ a:hover {
     padding: 25px;
     margin: 0px 0px 0px 15px;
     width: min-content;
-
     font-size: 14px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 
 }
@@ -522,11 +521,11 @@ a:hover {
     /* z-index only works on positioned elements*/
     position: relative;
     z-index: 0;
-    gap: 30px;
+    gap: 40px;
 }
 
 .pricing-table .table-wrapper {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
     border-radius: 15px;
     background-color: white;
     padding: 20px;
