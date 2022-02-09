@@ -6,7 +6,6 @@ const Footer = () => {
                 <p><span>© 2022 Post Maker</span> <span>—</span> <span>enquiries@post-maker.com</span></p>
             </div>
             <img src="/icons/twitter-brands.svg" alt="" />
-            {/* <img src="/icons/instagram-brands.svg" alt="" />*/}
         </div>
     );
 };
