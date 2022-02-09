@@ -301,9 +301,6 @@ a:hover {
 }
 
 .tool-card img {
-    /*box-shadow: 5px 4px #e0e0e0;
-    box-shadow: 1px 1px 8px grey;
-    border-radius: 5px;*/
     max-width: 100%;
     align-items: flex-start;
 }
@@ -553,13 +550,13 @@ a:hover {
 }
 
 /*https://dev.to/temmietope/rounded-edges-on-table-rows-1d0n*/
-td:first-child,
-th:first-child {
+.pricing-table td:first-child,
+.pricing-table th:first-child {
     border-radius: 15px 0 0 15px;
 }
 
-td:last-child,
-th:last-child {
+.pricing-table td:last-child,
+.pricing-table th:last-child {
     border-radius: 0 15px 15px 0;
 }
 
@@ -720,6 +717,13 @@ th:last-child {
         padding: 0px;
         /* .shadow-light */
         box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .pricing-table td:first-child,
+    .pricing-table th:first-child,
+    .pricing-table td:last-child,
+    .pricing-table th:last-child {
+        border-radius: 0px;
     }
 }
 
