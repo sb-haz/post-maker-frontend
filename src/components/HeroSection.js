@@ -13,11 +13,11 @@ const HeroSection = () => {
                     <span>-ready</span>
                     <br />
                     <span>content from </span>
-                    <span className="twitter-colour-gradient">
-                        Tweets
-                    </span>
+                    <span className="twitter-colour-gradient">Tweets</span>
+                    <span>Tweets</span>
                     <span> & </span>
                     <span className="tiktok-colour-gradient" >Tiktoks</span>
+                    <span>Tiktoks</span>
                     <span>.</span>
                 </h1>
                 <p>Say good-bye to screenshotting, editing apps & downloading videos.

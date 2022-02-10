@@ -13,5 +13,5 @@ const ToolCard = ({ src, availableNow, title, body, link }) => {
         </div>
     );
 };
-//<p className="tool-coming-soon">COMING SOON</p>
+
 export default ToolCard;
