@@ -423,6 +423,7 @@ a:hover {
     align-items: flex-start;
 }
 
+/* form card */
 .tool-content .form-card {
     display: flex;
     flex-wrap: wrap;
@@ -435,18 +436,21 @@ a:hover {
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 }
 
+/* form */
 .tool-content .form-card .form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+/* form label */
 .tool-content .form-card .form label {
     font-size: 16px;
     font-weight: 500;
     color: #353535;
 }
 
+/* input field */
 .tool-content .form-card .form input {
     height: 40px;
     border: none;
@@ -455,6 +459,12 @@ a:hover {
     margin-bottom: 15px;
 }
 
+/* input field text */
+.tool-content .form-card .form input[type=text] {
+    padding-left: 12px;
+}
+
+/* submit button */
 .tool-content .form-card .form input:last-child {
     margin-top: 10px;
     margin-bottom: -5px;
@@ -464,6 +474,7 @@ a:hover {
     background-color: white;
 }
 
+/* example card*/
 .example-card {
     display: flex;
     flex-wrap: wrap;
