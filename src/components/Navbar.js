@@ -8,8 +8,6 @@ const Navbar = () => {
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
                     to='/tool/quote'>Quote</NavLink>
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
-                    to='/tool/image'>Image</NavLink>
-                <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
                     to='/tool/video'>Video</NavLink>
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
                     to='/tool/reel'>Reel</NavLink>
