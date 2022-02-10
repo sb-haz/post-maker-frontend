@@ -62,8 +62,10 @@ a:hover {
 }
 
 .divider-animated-waves-footer {
-    margin-top: 20px;
+
     background-image: url(../public/dividers/animated-waves-footer.svg);
+    /* firefox right-align bug */
+    background-position: right -5px center;
     margin-top: -1px;
     margin-bottom: -1px;
 }
