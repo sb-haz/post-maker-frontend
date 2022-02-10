@@ -45,10 +45,10 @@ function App() {
       <ScrollToTop>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/quote' element={<Tool type={makers.quote.type} title={makers.quote.title} desc={makers.quote.desc} tag={makers.quote.tag} media_src={makers.quote.media_src} />} />
-          <Route path='/image' element={<Tool type={makers.image.type} title={makers.image.title} desc={makers.image.desc} tag={makers.image.tag} media_src={makers.image.media_src} />} />
-          <Route path='/video' element={<Tool type={makers.video.type} title={makers.video.title} desc={makers.video.desc} tag={makers.video.tag} media_src={makers.video.media_src} />} />
-          <Route path='/reel' element={<Tool type={makers.reel.type} title={makers.reel.title} desc={makers.reel.desc} tag={makers.reel.tag} media_src={makers.reel.media_src} />} />
+          <Route path='/tool/quote' element={<Tool type={makers.quote.type} title={makers.quote.title} desc={makers.quote.desc} tag={makers.quote.tag} media_src={makers.quote.media_src} />} />
+          <Route path='/tool/image' element={<Tool type={makers.image.type} title={makers.image.title} desc={makers.image.desc} tag={makers.image.tag} media_src={makers.image.media_src} />} />
+          <Route path='/tool/video' element={<Tool type={makers.video.type} title={makers.video.title} desc={makers.video.desc} tag={makers.video.tag} media_src={makers.video.media_src} />} />
+          <Route path='/tool/reel' element={<Tool type={makers.reel.type} title={makers.reel.title} desc={makers.reel.desc} tag={makers.reel.tag} media_src={makers.reel.media_src} />} />
         </Routes>
       </ScrollToTop>
 

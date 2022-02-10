@@ -6,22 +6,22 @@ const AvailableTools = () => {
             img: '/examples/quote_maker.png',
             availableNow: true,
             title: 'Quote Maker',
-            body: 'Creates a watermarked image of a tweet, with a resolution of 1080 by 1080 pixels.',
-            link: '/quote'
+            body: 'Create a watermarked image of a tweet. Resolution of 1080 by 1080 pixels.',
+            link: '/tool/quote'
         },
         video: {
             img: '/examples/video_maker.gif',
             availableNow: true,
             title: 'Video Maker',
-            body: 'Creates a watermarked video of a tweet containing a video, with a resolution of 1080 by 1080 pixels.',
-            link: '/video'
+            body: 'Create a watermarked video of a tweet or tiktok. Resolution of 1080 by 1080 pixels.',
+            link: '/tool/video'
         },
         reel: {
             img: '/examples/reel_maker.gif',
             availableNow: true,
             title: 'Reel Maker',
-            body: 'Creates a watermarked video of a tweet containing a video, with a resolution of 1920 by 1080 pixels.',
-            link: '/reel'
+            body: 'Create a watermarked reel of a tweet or tiktok. Resolution of 1920 by 1080 pixels.',
+            link: '/tool/reel'
         },
     }
 
