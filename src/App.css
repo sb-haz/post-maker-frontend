@@ -390,7 +390,6 @@ a:hover {
 
 .feature-card img {
     margin-top: 10px;
-    border-radius: 15px;
 }
 
 /* tool page content */
@@ -457,10 +456,29 @@ a:hover {
     border: solid 1px #ccc;
     border-radius: 10px;
     margin-bottom: 15px;
+    padding-left: 32px;
+}
+
+.tool-content .form-card .form input {
+    background-size: 13px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+.tool-content .form-card .form input:nth-of-type(1) {
+    background-image: url('../public/icons/form-twitter.png');
+}
+
+.tool-content .form-card .form input:nth-of-type(2) {
+    background-image: url('../public/icons/form-watermark.png');
+}
+
+.tool-content .form-card .form input:nth-of-type(3) {
+    background-image: url('../public/icons/form-email.png');
 }
 
 /* input field text */
-.tool-content .form-card .form input[type=text] {
+.tool-content .form-card .form input::-webkit-input-placeholder {
     padding-left: 12px;
 }
 

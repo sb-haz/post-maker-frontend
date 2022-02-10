@@ -11,7 +11,7 @@ const Features = () => {
         },
         {
             title: 'Copy & Paste Captions',
-            icon: '/icons/copy-solid.svg',
+            icon: '/icons/twitter-brands.svg',
             body: `Caption crediting the Tweet or Tiktok author will be provided so you may credit them on your post.`,
             example: '/examples/feature-email.png'
         },
