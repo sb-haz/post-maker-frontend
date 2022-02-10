@@ -459,21 +459,27 @@ a:hover {
     padding-left: 32px;
 }
 
+/* avoid padding on search btn */
+.tool-content .form-card .form input:last-of-type {
+    padding-left: 0px;
+}
+
+/* input icon */
 .tool-content .form-card .form input {
     background-size: 13px;
     background-position: 10px center;
     background-repeat: no-repeat;
 }
 
-.tool-content .form-card .form input:nth-of-type(1) {
+.tool-content .form-card .form input#tweet-icon {
     background-image: url('../public/icons/form-twitter.png');
 }
 
-.tool-content .form-card .form input:nth-of-type(2) {
+.tool-content .form-card .form input#watermark-icon {
     background-image: url('../public/icons/form-watermark.png');
 }
 
-.tool-content .form-card .form input:nth-of-type(3) {
+.tool-content .form-card .form input#email-icon {
     background-image: url('../public/icons/form-email.png');
 }
 
