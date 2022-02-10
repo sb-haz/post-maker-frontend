@@ -33,7 +33,7 @@ const AvailableTools = () => {
     }
 
     return (
-        <div className="available-tools" id='link-available-tools'>
+        <div className="available-tools-wrapper" id='link-available-tools'>
             <div className="content">
                 <div className="available-tools-text">
                     <h1>Available <span>Tools</span></h1>

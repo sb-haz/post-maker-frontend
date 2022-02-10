@@ -29,6 +29,11 @@ a:hover {
     padding: 30px;
 }
 
+/* remove content padding from footer */
+.content:last-of-type{
+    padding: 0px;
+}
+
 /* cards shadow*/
 .shadow {
     /*https://getcssscan.com/css-box-shadow-examples*/
@@ -243,7 +248,7 @@ a:hover {
 }
 
 /* available tools section */
-.available-tools {
+.available-tools-wrapper {
     background:
         linear-gradient(to top, #ff7eba, rgba(255, 255, 255, 0)),
         linear-gradient(to right, #ffd466, #ff7eba);
@@ -493,6 +498,13 @@ a:hover {
 }
 
 /* footer */
+.footer-wrapper {
+    background:
+        linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 0%),
+        linear-gradient(to right, #fff 30%, #ce2b7b);
+    background-size: cover;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -501,10 +513,6 @@ a:hover {
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
-
-    background:
-        linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 0%),
-        linear-gradient(to right, #fff 30%, #ce2b7b);
 }
 
 .footer-text {
