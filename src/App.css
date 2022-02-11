@@ -84,8 +84,7 @@ a:hover {
 .gradient-btn {
     text-decoration: none;
     text-align: center;
-    padding: 6px;
-    width: 15%;
+    padding: 6px 6px 6px 6px;
 
     position: relative;
     /* stops whole bg being coloured */
@@ -142,6 +141,16 @@ a:hover {
     text-shadow:
         -2px -1px 2px #6ef4ed,
         2px 1px 2px #ec2c57;
+}
+
+/* simple btn */
+.simple-btn {
+    text-decoration: none;
+    color: #61d2ff;
+}
+
+.simple-btn:hover {
+    color: #00b7ff;
 }
 
 /* tags e.g. NEW */
@@ -231,8 +240,13 @@ a:hover {
     gap: 20px;
 }
 
-.hero-info a {
-    min-width: 100px;
+.hero-info a:first-of-type {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.hero-info a:last-of-type {
+    padding-left: 15px;
 }
 
 .hero-video {
@@ -523,6 +537,62 @@ a:hover {
     border-radius: 15px;
 }
 
+/* guide section */
+.guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.guide h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #0099ff, #a0d9ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.guide .steps {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guide .step {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: right;
+    background-color: white;
+}
+
+.guide .step .step-text {
+    max-width: 400px;
+}
+
+.guide .step:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.guide .step h4 {
+    font-weight: 600;
+}
+
+.guide .step img {
+    border-radius: 15px;
+}
+
+.guide a {
+    margin-top: 75px;
+}
+
 /* pricing section */
 .pricing-section {
     margin-bottom: 75px;
@@ -718,6 +788,12 @@ a:hover {
 }
 
 /* media queries */
+@media (max-width: 390px) {
+    .footer-text {
+        gap: 0px;
+    }
+}
+
 @media (max-width: 415px) {
     .available-tools-text h1 span {
         display: block;
@@ -730,8 +806,13 @@ a:hover {
 }
 
 @media (max-width: 475px) {
-    .pricing-table table tr td {
-        /*font-size: calc(0.75em + 1vmin);*/
+    .guide .step .step-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .guide .step {
+        justify-content: center;
     }
 }
 
@@ -742,6 +823,15 @@ a:hover {
 
     .hero-video video {
         display: none;
+    }
+
+    .hero-section {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        margin-top: 30px
     }
 }
 
