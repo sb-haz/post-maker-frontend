@@ -789,6 +789,9 @@ a:hover {
 
 /* media queries */
 @media (max-width: 390px) {
+    .navbar {
+        margin-top: -15px;
+    }
     .footer-text {
         gap: 0px;
     }
@@ -826,7 +829,7 @@ a:hover {
     }
 
     .hero-section {
-        margin-top: -20px;
+        margin-top: -25px;
         margin-bottom: 20px;
     }
 
