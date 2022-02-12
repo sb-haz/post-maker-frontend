@@ -24,10 +24,7 @@ const HeroSection = () => {
                     <br />
                     <span>Let us handle the heavy work so you can focus on growing your page.</span>
                 </p>
-                <div>
-                    <a href="#link-available-tools" className="gradient-btn">Start</a>
-                    <Link to="/guide" className="simple-btn">Guide</Link>
-                </div>
+                <a href="#link-available-tools" className="gradient-btn">Start</a>
             </div>
             <DemoVideo />
         </div>

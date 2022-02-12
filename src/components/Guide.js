@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Guide = () => {
+    const navigate = useNavigate();
     return (
         <div className="content guide">
-            <h1>How It Works</h1>
+            <h1>So, how do I use this?</h1>
             <div className="steps">
                 <div className="step shadow-light">
                     <img src="https://via.placeholder.com/200" alt="" className="unselectable" />
@@ -34,7 +35,7 @@ const Guide = () => {
                     </div>
                 </div>
             </div>
-            <Link to="/" className="simple-btn">Back to Home</Link>
+            <Link to="/" onClick={() => navigate(-1)} className="simple-btn">Back to Home</Link>
         </div>
     )
 }

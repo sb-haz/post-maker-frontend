@@ -240,13 +240,9 @@ a:hover {
     gap: 20px;
 }
 
-.hero-info a:first-of-type {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.hero-info a:last-of-type {
-    padding-left: 15px;
+.hero-info a {
+    padding: 6px;
+    width: 15%;
 }
 
 .hero-video {
@@ -349,12 +345,14 @@ a:hover {
     flex-direction: column;
     gap: 40px;
     margin-top: 50px;
+    align-items: center;
 }
 
 .features h1 {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: -40px;
     background: -webkit-linear-gradient(45deg, #eeca55, #c9772f, #ce2b7b, #a95be4);
     -webkit-background-clip: text;
     background-clip: text;
@@ -583,6 +581,11 @@ a:hover {
 
 .guide .step h4 {
     font-weight: 600;
+    font-size: 18px;
+    background: -webkit-linear-gradient(45deg, #c9772f, #ce2b7b, #c9772f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .guide .step img {
@@ -792,6 +795,7 @@ a:hover {
     .navbar {
         margin-top: -15px;
     }
+
     .footer-text {
         gap: 0px;
     }

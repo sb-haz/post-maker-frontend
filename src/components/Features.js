@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FeatureCard from "./FeatureCard";
 
 const Features = () => {
@@ -31,6 +32,7 @@ const Features = () => {
     return (
         <div className="features">
             <h1>Feature Packed</h1>
+            <p>How does it work? <Link to="/guide" className="simple-btn">Learn more</Link></p>
             <div className="features-cards">
                 <FeatureCard title={info[0].title} icon={info[0].icon} body={info[0].body} />
                 <FeatureCard title={info[1].title} icon={info[1].icon} body={info[1].body} />
