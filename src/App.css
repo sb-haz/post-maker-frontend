@@ -460,22 +460,50 @@ img, video {
     background: linear-gradient(180deg, #ffd466, #ffb2a5, #ff7eba);
 }
 
+.tool-content .form-card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool-content .form-card-accordian {
+    padding: 8px;
+    background-color: rgba(224, 224, 224, 0.5);
+    box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+}
+
+.tool-content .form-card-accordian a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.tool-content .form-card-accordian .accordian-active {
+    background-color: white;
+    box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+}
+
+.tool-content .form-card-accordian a {
+    padding: 4px;
+}
+
 /* form */
-.tool-content .form-card .form {
+.tool-content .form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 /* form label */
-.tool-content .form-card .form label {
+.tool-content .form label {
     font-size: 16px;
     font-weight: 500;
     color: #353535;
 }
 
 /* input field */
-.tool-content .form-card .form input {
+.tool-content .form input {
     height: 40px;
     border: none;
     border: solid 1px #ccc;
@@ -485,36 +513,44 @@ img, video {
 }
 
 /* avoid padding on search btn */
-.tool-content .form-card .form input:last-of-type {
+.tool-content .form input:last-of-type {
     padding-left: 0px;
 }
 
 /* input icon */
-.tool-content .form-card .form input {
+.tool-content .form input {
     background-size: 13px;
     background-position: 10px center;
     background-repeat: no-repeat;
 }
 
-.tool-content .form-card .form input#tweet-icon {
+.tool-content .form input#twitter-icon {
     background-image: url('../public/icons/form-twitter.png');
 }
 
-.tool-content .form-card .form input#watermark-icon {
+.tool-content .form input#text-icon {
+    background-image: url('../public/icons/form-text.png');
+}
+
+.tool-content .form input#tiktok-icon {
+    background-image: url('../public/icons/form-tiktok.png');
+}
+
+.tool-content .form input#watermark-icon {
     background-image: url('../public/icons/form-watermark.png');
 }
 
-.tool-content .form-card .form input#email-icon {
+.tool-content .form input#email-icon {
     background-image: url('../public/icons/form-email.png');
 }
 
 /* input field text */
-.tool-content .form-card .form input::-webkit-input-placeholder {
+.tool-content .form input::-webkit-input-placeholder {
     padding-left: 12px;
 }
 
 /* submit button */
-.tool-content .form-card .form input:last-child {
+.tool-content .form input:last-child {
     margin-top: 10px;
     margin-bottom: -5px;
     width: 15%;
@@ -555,6 +591,9 @@ img, video {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: -15px;
+    background-color: rgba(224, 224, 224, 0.5);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 /* quote generated caption */
@@ -567,8 +606,8 @@ img, video {
 }
 
 /* copy to clipboard btn */
-.render-card-text .copy-text {
-    padding: 2px;
+.render-card-text .copy-text { 
+    padding: 5px;
     text-decoration: none;
     color: #3b94cf;
 }

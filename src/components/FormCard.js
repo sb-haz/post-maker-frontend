@@ -5,11 +5,25 @@ const api = axios.create({
     baseURL: 'http://127.0.0.1:5000/'
 })
 
-const FormCard = ({ useEmail, setCaption }) => {
+const FormCard = ({ type, useEmail, setCaption }) => {
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
     const [email, setEmail] = useState('');
+    const [quoteSource, setQuoteSource] = useState('twitter');
+    const [videoSource, setVideoSource] = useState('twitter');
     const [isPending, setIsPending] = useState(false);
+
+    const toggleQuoteSource = (e) => {
+        e.preventDefault();
+        if (quoteSource === 'twitter') setQuoteSource('text')
+        if (quoteSource === 'text') setQuoteSource('twitter')
+    }
+
+    const toggleVideoSource = (e) => {
+        e.preventDefault();
+        if (videoSource === 'twitter') setVideoSource('tiktok')
+        if (videoSource === 'tiktok') setVideoSource('twitter')
+    }
 
     const createQuote = async () => {
         try {
@@ -49,16 +63,73 @@ const FormCard = ({ useEmail, setCaption }) => {
 
     return (
         <div className="form-card shadow">
-            <p className="coloured-tag blue">Input</p>
+            <div className="form-card-title">
+                <p className="coloured-tag blue">Input</p>
+
+                {type === 'quote' ?
+                    (<div className="form-card-accordian">
+                        <a href=""
+                            className={quoteSource === 'twitter' ? 'accordian-active' : ''}
+                            onClick={(e) => {
+                                toggleQuoteSource(e)
+                            }}
+                        >Twitter</a>
+                        <a href=""
+                            className={quoteSource === 'text' ? 'accordian-active' : ''}
+                            onClick={(e) => {
+                                toggleQuoteSource(e)
+                            }}
+                        >Text</a>
+                    </div>) : ''}
+
+                {type !== 'quote' ?
+                    (<div className="form-card-accordian">
+                        <a href=""
+                            className={videoSource === 'twitter' ? 'accordian-active' : ''}
+                            onClick={(e) => {
+                                toggleVideoSource(e)
+                            }}
+                        >Twitter</a>
+                        <a href=""
+                            className={videoSource === 'tiktok' ? 'accordian-active' : ''}
+                            onClick={(e) => {
+                                toggleVideoSource(e)
+                            }}
+                        >Tiktok</a>
+                    </div>) : ''}
+
+            </div>
+
+
+
             <form className="form" onSubmit={handleSubmit}>
-                <label>Tweet URL</label>
-                <input
-                    id="tweet-icon"
-                    type="text"
-                    name="tweet_url"
-                    value={tweetUrl}
-                    onChange={(e) => setTweetUrl(e.target.value)}
-                />
+
+
+
+                {type === 'quote' ?
+                    <>
+                        <label>{quoteSource === 'twitter' ? 'Twitter URL' : 'Text'}</label>
+                        <input type="text"
+                            id={`${quoteSource}-icon`}
+                            name="tweet_url"
+                            value={tweetUrl}
+                            onChange={(e) => setTweetUrl(e.target.value)} />
+                    </>
+                    : ''}
+
+
+                {type !== 'quote' ?
+                    <>
+                        <label>{videoSource === 'twitter' ? 'Twitter' : 'TikTok'}</label>
+                        <input type="text"
+                            id={`${videoSource}-icon`}
+                            name="tweet_url"
+                            value={tweetUrl}
+                            onChange={(e) => setTweetUrl(e.target.value)} />
+                    </>
+                    : ''}
+
+
                 <label>Watermark</label>
                 <input
                     id="watermark-icon"
