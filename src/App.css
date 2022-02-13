@@ -428,6 +428,10 @@ a:hover {
     width: 50%;
 }
 
+.tool-content .text a {
+    white-space: pre;
+}
+
 .tool-content .card-wrapper {
     display: flex;
     flex-wrap: wrap;
