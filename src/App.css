@@ -465,26 +465,26 @@ img, video {
     justify-content: space-between;
 }
 
-.tool-content .form-card-accordian {
+.tool-content .form-card-toggle {
     padding: 8px;
     background-color: rgba(224, 224, 224, 0.5);
     box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
     border-radius: 10px;
 }
 
-.tool-content .form-card-accordian a {
+.tool-content .form-card-toggle a {
     text-decoration: none;
     font-size: 13px;
 }
 
 
-.tool-content .form-card-accordian .accordian-active {
+.tool-content .form-card-toggle .toggle-active {
     background-color: white;
     box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
     border-radius: 10px;
 }
 
-.tool-content .form-card-accordian a {
+.tool-content .form-card-toggle a {
     padding: 4px;
 }
 

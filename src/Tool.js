@@ -17,11 +17,11 @@ const Tool = ({ type, title, desc, media_src }) => {
             <div className="card-wrapper">
                 {type === 'quote' ?
                     <>
-                        <FormCard type={type} useEmail={false} setCaption={setCaption} />
+                        <FormCard type={type} setCaption={setCaption} />
                         <RenderCard media_src={media_src} caption={caption} />
                     </> :
                     <>
-                        <FormCard type={type} useEmail={true} />
+                        <FormCard type={type} />
                         <ExampleCard media_src={media_src} />
                     </>
                 }
