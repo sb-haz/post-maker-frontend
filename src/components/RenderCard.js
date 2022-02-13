@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 const RenderCard = ({ media_src, caption }) => {
     const [showClipboard, setShowClipboard] = useState(true)
 
+    const copyToClipboard = (e) => {
+        e.preventDefault();
+        navigator.clipboard.writeText(caption)
+        setShowClipboard(false)
+    }
     /* temp caption */
     caption = "😂😂😂 (Twitter @ username)"
 
@@ -16,11 +21,10 @@ const RenderCard = ({ media_src, caption }) => {
                     <p id="render-card-caption">{caption}</p>
 
                     {showClipboard === true ?
-                        (<Link to={{}} onClick={() => {
-                            navigator.clipboard.writeText(caption)
-                            setShowClipboard(false)
+                        (<Link to="#" onClick={(e) => {
+                            copyToClipboard(e)
                         }}
-                            href="#" className="copy-text">Copy</Link>) : ''}
+                            href="" className="copy-text">Copy</Link>) : ''}
 
                 </div>) : ''}
             <div>
