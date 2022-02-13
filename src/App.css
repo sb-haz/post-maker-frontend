@@ -538,6 +538,32 @@ a:hover {
     border-radius: 15px;
 }
 
+/* render card */
+.render-card-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+
+/* quote generated caption */
+#render-card-caption {
+    background-color: #fff4e7;
+    padding: 5px;
+    box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/* copy to clipboard btn */
+.render-card-text .copy-text {
+    padding: 2px;
+    text-decoration: none;
+    color: #3b94cf;
+}
+
 /* guide section */
 .guide {
     display: flex;

@@ -1,24 +1,38 @@
 import { useState } from "react";
+import axios from 'axios'
 
-const FormCard = ({ useEmail }) => {
+const api = axios.create({
+    baseURL: 'http://127.0.0.1:5000/'
+})
+
+const FormCard = ({ useEmail, setCaption }) => {
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
     const [email, setEmail] = useState('');
     const [isPending, setIsPending] = useState(false);
 
+    const createQuote = async () => {
+        let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
+        setCaption(res.data['caption'])
+        setIsPending(false)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const newContentInfo = { tweetUrl, watermark, email }
+        const data = { tweetUrl, watermark, email }
         setIsPending(true)
 
-        fetch('http://127.0.0.1:5000/tool/quote', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(newContentInfo)
-        }).then(() => {
-            console.log('New Blog Added');
-            setIsPending(false)
-        })
+        createQuote()
+
+        // Using fetch
+        // fetch('http://127.0.0.1:5000/tool/quote', {
+        //     method: 'POST',
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify(data)
+        // }).then((res) => {
+        //     console.log(res.data);
+        //     setIsPending(false)
+        // })
     }
 
     return (
