@@ -1,29 +1,30 @@
 import ToolCard from "./ToolCard";
 
 const AvailableTools = () => {
-    const info = {
-        quote: {
-            img: '/examples/quote_maker.png',
-            availableNow: true,
+
+    const availableToolsInfo = [
+        {
             title: 'Quote Maker',
             body: 'Create a watermarked image of a tweet. Resolution of 1080 by 1080 pixels.',
-            link: '/tool/quote'
-        },
-        video: {
-            img: '/examples/video_maker.gif',
+            img: '/examples/quote_maker.png',
+            link: '/tool/quote',
             availableNow: true,
+        },
+        {
             title: 'Video Maker',
             body: 'Create a watermarked video of a tweet or tiktok. Resolution of 1080 by 1080 pixels.',
-            link: '/tool/video'
-        },
-        reel: {
-            img: '/examples/reel_maker.gif',
+            img: '/examples/video_maker.gif',
+            link: '/tool/video',
             availableNow: true,
+        },
+        {
             title: 'Reel Maker',
             body: 'Create a watermarked reel of a tweet or tiktok. Resolution of 1920 by 1080 pixels.',
-            link: '/tool/reel'
+            img: '/examples/reel_maker.gif',
+            link: '/tool/reel',
+            availableNow: true,
         },
-    }
+    ]
 
     return (
         <div className="available-tools-wrapper" id='link-available-tools'>
@@ -33,25 +34,15 @@ const AvailableTools = () => {
                     <p>Make quotes & videos that are ready to upload to Instagram.<br />Just paste the tweet or tiktok link, and we'll create the content.</p>
                 </div>
                 <div className="tool-cards">
-                    <ToolCard
-                        src={info.quote.img}
-                        availableNow={info.quote.availableNow}
-                        title={info.quote.title}
-                        body={info.quote.body}
-                        link={info.quote.link} />
 
-                    <ToolCard
-                        src={info.video.img}
-                        availableNow={info.video.availableNow}
-                        title={info.video.title}
-                        body={info.video.body}
-                        link={info.video.link} />
-                    <ToolCard
-                        src={info.reel.img}
-                        availableNow={info.reel.availableNow}
-                        title={info.reel.title}
-                        body={info.reel.body}
-                        link={info.reel.link} />
+                    {availableToolsInfo.map(
+                        ({ title, body, img, link, availableNow }) =>
+                            <ToolCard
+                                title={title}
+                                body={body}
+                                img={img}
+                                link={link}
+                                availableNow={availableNow} />)}
                 </div>
             </div>
         </div>
