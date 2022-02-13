@@ -35,7 +35,7 @@ const Guide = () => {
                         </div>
                     </div>)}
             </div>
-            <Link to="/" onClick={() => navigate(-1)} className="simple-btn">Back to Home</Link>
+            <Link to="#" onClick={() => navigate(-1)} className="simple-btn">Go Back</Link>
         </div>
     )
 }
