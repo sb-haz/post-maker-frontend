@@ -4,14 +4,22 @@ const FormCard = ({ useEmail }) => {
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
     const [email, setEmail] = useState('');
+    const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const newContentInfo = { tweetUrl, watermark, email }
-        console.log(newContentInfo);
+        setIsPending(true)
+
+        fetch('http://127.0.0.1:5000/tool/quote', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newContentInfo)
+        }).then(() => {
+            console.log('New Blog Added');
+            setIsPending(false)
+        })
     }
-
-
 
     return (
         <div className="form-card shadow">
@@ -46,7 +54,8 @@ const FormCard = ({ useEmail }) => {
                     </> : ''
                 }
 
-                <input type="submit" value="Create" />
+                {!isPending && <input type="submit" value="Create" />}
+                {isPending && <input type="submit" disabled value="Creating..." />}
             </form>
         </div >
     );
