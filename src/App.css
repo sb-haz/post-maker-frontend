@@ -550,7 +550,7 @@ a:hover {
 
 /* quote generated caption */
 #render-card-caption {
-    background-color: #fff4e7;
+    background-color: #fff9f1;
     padding: 5px;
     box-shadow: 2px 0px 10px rgb(0 0 0 / 0.1);
     border-radius: 5px;
@@ -855,6 +855,15 @@ a:hover {
     .feature-card-title h2,
     .feature-card p {
         text-align: center;
+    }
+
+    .render-card-text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #render-card-caption {
+        flex-basis: 100%;
     }
 }
 

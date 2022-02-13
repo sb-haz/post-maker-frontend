@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 const RenderCard = ({ media_src, caption }) => {
+    /* temp caption */
+    caption = "😂😂😂 (Twitter @ username)"
     return (
         <div className="example-card shadow">
             <h1 className="coloured-tag blue">Render</h1>
