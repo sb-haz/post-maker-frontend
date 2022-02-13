@@ -25,7 +25,7 @@ a:hover {
 
 img, video {
     width: 100%;
-    height: auto;
+    height: intrinsic;
 }
 
 /* main div for all content */
@@ -543,7 +543,7 @@ img, video {
     border-radius: 15px;
 }
 
-.example-card video { 
+.example-card video {
     border-radius: 15px;
 }
 
