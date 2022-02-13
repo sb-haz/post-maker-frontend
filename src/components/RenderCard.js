@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const RenderCard = ({ media_src, caption }) => {
     const [showClipboard, setShowClipboard] = useState(true)
@@ -15,11 +16,11 @@ const RenderCard = ({ media_src, caption }) => {
                     <p id="render-card-caption">{caption}</p>
 
                     {showClipboard === true ?
-                        (<a onClick={() => {
+                        (<Link to={{}} onClick={() => {
                             navigator.clipboard.writeText(caption)
                             setShowClipboard(false)
                         }}
-                            href="#" className="copy-text">Copy</a>) : ''}
+                            href="#" className="copy-text">Copy</Link>) : ''}
 
                 </div>) : ''}
             <img src={media_src} alt="" />
