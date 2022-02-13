@@ -23,7 +23,7 @@ a:hover {
     color: #3a4974;
 }
 
-img {
+img, video {
     width: 100%;
     height: auto;
 }
@@ -234,6 +234,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
+    margin-bottom: 55px;
     gap: 10px;
 }
 
@@ -444,7 +445,6 @@ img {
     flex-direction: row;
     margin-top: 50px;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 /* form card */
@@ -452,7 +452,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 7;
+    flex-grow: 8;
     gap: 30px;
     padding: 25px;
     margin: 0px 15px 0px 0px;
@@ -627,6 +627,7 @@ img {
 }
 
 .guide .step img {
+    width: 30%;
     border-radius: 15px;
 }
 
