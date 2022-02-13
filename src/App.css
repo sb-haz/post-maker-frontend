@@ -445,6 +445,7 @@ img, video {
     flex-direction: row;
     margin-top: 50px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 /* form card */

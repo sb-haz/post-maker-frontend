@@ -14,8 +14,12 @@ const FormCard = ({ useEmail, setCaption }) => {
     const createQuote = async () => {
         try {
             let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
+            // Update caption on render card
             setCaption(res.data['caption'])
+            // Toggle pending btn text
             setIsPending(false)
+            // Reset watermark field
+            setTweetUrl('')
         } catch (err) {
             console.log(err);
         }
@@ -23,12 +27,16 @@ const FormCard = ({ useEmail, setCaption }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = { tweetUrl, watermark, email }
-        setIsPending(true)
 
-        createQuote()
+        // If input is provided
+        if (tweetUrl | watermark !== '') {
+            // Show 'creating' text
+            setIsPending(true)
+            // Make POST request
+            createQuote()
+        }
 
-        // Using fetch
+        // Using fetch instead of axios
         // fetch('http://127.0.0.1:5000/tool/quote', {
         //     method: 'POST',
         //     headers: { "Content-Type": "application/json" },
