@@ -5,10 +5,13 @@
 /* defaults */
 * {
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Poppins";
     font-weight: 400;
     color: #0f1d40;
-
 }
 
 p,
@@ -22,14 +25,11 @@ a:hover {
 
 img {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 /* main div for all content */
 .content {
-
     max-width: 1920px;
     margin: 0 auto;
     padding: 30px;
@@ -539,12 +539,10 @@ img {
 }
 
 .example-card img {
-    max-width: 100%;
     border-radius: 15px;
 }
 
-.example-card video {
-    max-width: 100%;
+.example-card video { 
     border-radius: 15px;
 }
 
