@@ -12,9 +12,13 @@ const FormCard = ({ useEmail, setCaption }) => {
     const [isPending, setIsPending] = useState(false);
 
     const createQuote = async () => {
-        let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
-        setCaption(res.data['caption'])
-        setIsPending(false)
+        try {
+            let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
+            setCaption(res.data['caption'])
+            setIsPending(false)
+        } catch (err) {
+            console.log(err);
+        }
     }
 
     const handleSubmit = (e) => {
