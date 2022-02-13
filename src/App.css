@@ -20,6 +20,11 @@ a:hover {
     color: #3a4974;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* main div for all content */
 .content {
 
@@ -251,8 +256,8 @@ a:hover {
 .hero-video {
     display: flex;
     flex-direction: column;
-    height: 350px;
-    width: auto;
+    width: 350px;
+    height: auto;
     transform: rotate(2deg);
     margin-top: 5px;
     border: 2px solid rgba(247, 199, 127, 0.5);
@@ -333,7 +338,6 @@ a:hover {
 }
 
 .tool-card img {
-    max-width: 100%;
     align-items: flex-start;
 }
 
@@ -549,6 +553,7 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     margin-bottom: -15px;
 }
 
