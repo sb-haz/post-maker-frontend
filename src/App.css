@@ -14,8 +14,7 @@ body {
     color: #0f1d40;
 }
 
-p,
-p span {
+a, p, p span {
     color: #455466;
 }
 
