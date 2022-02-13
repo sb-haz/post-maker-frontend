@@ -1,8 +1,11 @@
 import { useState } from "react";
 
 const RenderCard = ({ media_src, caption }) => {
+    const [showClipboard, setShowClipboard] = useState(true)
+
     /* temp caption */
     caption = "😂😂😂 (Twitter @ username)"
+
     return (
         <div className="example-card shadow">
             <h1 className="coloured-tag blue">Render</h1>
@@ -10,10 +13,15 @@ const RenderCard = ({ media_src, caption }) => {
             {caption !== '' ?
                 (<div className="render-card-text">
                     <p id="render-card-caption">{caption}</p>
-                    <a onClick={() => { navigator.clipboard.writeText(caption) }}
-                        href="#" className="copy-text">Copy</a>
-                </div>) : ''}
 
+                    {showClipboard === true ?
+                        (<a onClick={() => {
+                            navigator.clipboard.writeText(caption)
+                            setShowClipboard(false)
+                        }}
+                            href="#" className="copy-text">Copy</a>) : ''}
+
+                </div>) : ''}
             <img src={media_src} alt="" />
         </div>
     );
