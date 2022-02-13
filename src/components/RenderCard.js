@@ -23,7 +23,9 @@ const RenderCard = ({ media_src, caption }) => {
                             href="#" className="copy-text">Copy</Link>) : ''}
 
                 </div>) : ''}
-            <img src={media_src} alt="" />
+            <div>
+                <img src={media_src} alt="" />
+            </div>
         </div>
     );
 };
