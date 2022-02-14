@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import FormCard from "./components/FormCard";
@@ -16,14 +16,14 @@ const Tool = ({ type, title, desc, media_src }) => {
             </div>
             <div className="card-wrapper">
                 {type === 'quote' ?
-                    <>
+                    <Fragment>
                         <FormCard type={type} setCaption={setCaption} />
                         <RenderCard media_src={media_src} caption={caption} />
-                    </> :
-                    <>
+                    </Fragment> :
+                    <Fragment>
                         <FormCard type={type} />
                         <ExampleCard media_src={media_src} />
-                    </>
+                    </Fragment>
                 }
 
             </div>
