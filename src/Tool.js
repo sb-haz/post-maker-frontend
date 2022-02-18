@@ -7,6 +7,7 @@ import RenderCard from "./components/RenderCard";
 
 const Tool = ({ type, title, desc, media_src }) => {
     const [caption, setCaption] = useState('')
+    const [quoteImageSrc, setQuoteImageSrc] = useState(media_src)
 
     return (
         <div className="content tool-content">
@@ -17,15 +18,14 @@ const Tool = ({ type, title, desc, media_src }) => {
             <div className="card-wrapper">
                 {type === 'quote' ?
                     <Fragment>
-                        <FormCard type={type} setCaption={setCaption} />
-                        <RenderCard media_src={media_src} caption={caption} />
+                        <FormCard type={type} setCaption={setCaption} setQuoteImageSrc={setQuoteImageSrc} />
+                        <RenderCard media_src={quoteImageSrc} caption={caption} />
                     </Fragment> :
                     <Fragment>
                         <FormCard type={type} />
                         <ExampleCard media_src={media_src} />
                     </Fragment>
                 }
-
             </div>
         </div>
     );

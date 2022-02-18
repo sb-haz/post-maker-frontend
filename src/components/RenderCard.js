@@ -10,7 +10,7 @@ const RenderCard = ({ media_src, caption }) => {
         setShowClipboard(false)
     }
     /* temp caption */
-    caption = "😂😂😂 (Twitter @ username)"
+    // caption = "😂😂😂 (Twitter @ username)"
 
     return (
         <div className="example-card shadow">

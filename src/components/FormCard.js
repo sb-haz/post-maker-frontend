@@ -5,7 +5,9 @@ const api = axios.create({
     baseURL: 'http://127.0.0.1:5000/'
 })
 
-const FormCard = ({ type, setCaption }) => {
+const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
+    const baseURL = 'http://127.0.0.1:5000/'
+
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
     const [email, setEmail] = useState('');
@@ -25,17 +27,44 @@ const FormCard = ({ type, setCaption }) => {
         if (videoSource === 'tiktok') setVideoSource('twitter')
     }
 
+    // Create quote POST request
     const createQuote = async () => {
         try {
             let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
 
-            // Update caption on render card
-            setCaption(res.data['caption'])
-
             // Toggle pending btn text
             setIsPending(false)
 
+            // Update caption on render card
+            setCaption(res.data['caption'])
+
+            // Update render img src
+            setQuoteImageSrc(baseURL + 'static/quote_render.png')
+
             // Reset watermark field
+            setTweetUrl('')
+
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    // Create video POST request
+    const createVideo = async () => {
+        try {
+            let res = await api.post('/tool/video', { tweet_url: tweetUrl, watermark: watermark, email: email })
+            setIsPending(false)
+            setTweetUrl('')
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    // Create reel POST request
+    const createReel = async () => {
+        try {
+            let res = await api.post('/tool/reel', { tweet_url: tweetUrl, watermark: watermark, email: email })
+            setIsPending(false)
             setTweetUrl('')
         } catch (err) {
             console.log(err);
@@ -45,14 +74,21 @@ const FormCard = ({ type, setCaption }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // If input is provided
-        if (tweetUrl | watermark !== '') {
-
-            // Show 'creating' text
-            setIsPending(true)
-
-            // Make POST request
-            createQuote()
+        if (type === 'quote') {
+            if (tweetUrl | watermark !== '') {
+                setIsPending(true)
+                createQuote()
+            }
+        } else if (type === 'video') {
+            if (tweetUrl | watermark | email !== '') {
+                setIsPending(true)
+                createVideo()
+            }
+        } else if (type === 'reel') {
+            if (tweetUrl | watermark | email !== '') {
+                setIsPending(true)
+                createReel()
+            }
         }
     }
 
