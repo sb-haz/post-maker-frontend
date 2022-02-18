@@ -524,16 +524,16 @@ img, video {
     background-repeat: no-repeat;
 }
 
+.tool-content .form input#tiktok-icon {
+    background-image: url('../public/icons/form-tiktok.png');
+}
+
 .tool-content .form input#twitter-icon {
     background-image: url('../public/icons/form-twitter.png');
 }
 
 .tool-content .form input#text-icon {
     background-image: url('../public/icons/form-text.png');
-}
-
-.tool-content .form input#tiktok-icon {
-    background-image: url('../public/icons/form-tiktok.png');
 }
 
 .tool-content .form input#watermark-icon {
