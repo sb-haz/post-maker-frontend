@@ -1,12 +1,15 @@
 import { useState, Fragment } from "react";
 import axios from 'axios'
 
+const apiURL = 'https://www.post-maker.xyz/'
+// const apiURL = 'http://localhost:5000/'
+
 const api = axios.create({
-    baseURL: 'https://www.post-maker.xyz/'
+    baseURL: apiURL
 })
 
 const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
-    const baseURL = 'https://www.post-maker.xyz/'
+    const baseURL = apiURL;
 
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
@@ -30,16 +33,20 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
     // Create quote POST request
     const createQuote = async () => {
         try {
-            let res = await api.post('/tool/quote', { tweet_url: tweetUrl, watermark: watermark })
+            let res = await api.post('/tool/quote', {
+                tweet_url: tweetUrl,
+                watermark: watermark,
+                source: quoteSource
+            })
 
             // Toggle pending btn text
             setIsPending(false)
 
             // Update caption on render card
-            setCaption(res.data['caption'])
+            setCaption(res.data['caption_text'])
 
             // Update render img src
-            setQuoteImageSrc(baseURL + 'static/quote_render.png')
+            setQuoteImageSrc(baseURL + res.data['quote_filepath'])
 
             // Reset watermark field
             setTweetUrl('')
