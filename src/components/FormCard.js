@@ -2,11 +2,11 @@ import { useState, Fragment } from "react";
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://144.202.10.59:5000/'
+    baseURL: 'https://www.post-maker.xyz/'
 })
 
 const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
-    const baseURL = 'http://144.202.10.59:5000/'
+    const baseURL = 'https://www.post-maker.xyz/'
 
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
