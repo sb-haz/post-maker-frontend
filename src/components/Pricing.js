@@ -25,7 +25,7 @@ const Pricing = () => {
                             </tr>
                             <tr>
                                 <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Quote</td>
-                                <td>10 per day</td>
+                                <td>5 per day</td>
                                 <td><img src="/icons/pricing-tick.png" alt="" className="pricing-tick-cross" /></td>
                             </tr>
                             <tr>
