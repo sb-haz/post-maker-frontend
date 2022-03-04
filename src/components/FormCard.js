@@ -113,13 +113,13 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                                 onClick={(e) => {
                                     toggleQuoteSource(e)
                                 }}
-                            >Twitter</a>
+                            ><span style={{color: "#32CD32"}}>•</span> Twitter</a>
                             <a href=""
                                 className={quoteSource === 'text' ? 'toggle-active' : ''}
                                 onClick={(e) => {
                                     toggleQuoteSource(e)
                                 }}
-                            >Text</a>
+                            ><span style={{color: "#32CD32"}}>•</span> Text</a>
                         </Fragment> :
                         <Fragment>
                             <a href=""
@@ -127,13 +127,13 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                                 onClick={(e) => {
                                     toggleVideoSource(e)
                                 }}
-                            >Twitter</a>
+                            ><span style={{color: "#32CD32"}}>•</span> Twitter</a>
                             <a href=""
                                 className={videoSource === 'tiktok' ? 'toggle-active' : ''}
                                 onClick={(e) => {
                                     toggleVideoSource(e)
                                 }}
-                            >Tiktok</a>
+                            ><span style={{color: "#FF8C00"}}>•</span> Tiktok</a>
                         </Fragment>
                     }
                 </div>
