@@ -14,7 +14,7 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
     const [tweetUrl, setTweetUrl] = useState('');
     const [watermark, setWatermark] = useState('');
     const [email, setEmail] = useState('');
-    const [quoteSource, setQuoteSource] = useState('twitter');
+    const [quoteSource, setQuoteSource] = useState('text');
     const [videoSource, setVideoSource] = useState('twitter');
     const [isPending, setIsPending] = useState(false);
 
