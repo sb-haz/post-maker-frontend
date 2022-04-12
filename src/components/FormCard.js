@@ -43,7 +43,8 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
             setIsPending(false)
 
             // Update caption on render card
-            setCaption(res.data['caption_text'])
+            // setCaption(res.data['caption_text'])
+            setCaption(`😂😂😂 (Credit @hasan)`)
 
             // Update render img src
             setQuoteImageSrc(baseURL + res.data['quote_filepath'])
@@ -82,9 +83,11 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
         e.preventDefault();
 
         if (type === 'quote') {
-            if (tweetUrl | watermark !== '') {
-                setIsPending(true)
-                createQuote()
+            if (watermark !== '') {
+                if (tweetUrl !== '') {
+                    setIsPending(true)
+                    createQuote()
+                }
             }
         } else if (type === 'video') {
             if (tweetUrl | watermark | email !== '') {
@@ -113,13 +116,13 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                                 onClick={(e) => {
                                     toggleQuoteSource(e)
                                 }}
-                            ><span style={{color: "#32CD32"}}>•</span> Twitter URL </a>
+                            ><span style={{ color: "#32CD32" }}>•</span> Twitter URL </a>
                             <a href=""
                                 className={quoteSource === 'text' ? 'toggle-active' : ''}
                                 onClick={(e) => {
                                     toggleQuoteSource(e)
                                 }}
-                            ><span style={{color: "#32CD32"}}>•</span> Text</a>
+                            ><span style={{ color: "#32CD32" }}>•</span> Text</a>
                         </Fragment> :
                         <Fragment>
                             <a href=""
@@ -127,13 +130,13 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                                 onClick={(e) => {
                                     toggleVideoSource(e)
                                 }}
-                            ><span style={{color: "#32CD32"}}>•</span> Twitter URL </a>
+                            ><span style={{ color: "#32CD32" }}>•</span> Twitter URL </a>
                             <a href=""
                                 className={videoSource === 'tiktok' ? 'toggle-active' : ''}
                                 onClick={(e) => {
                                     toggleVideoSource(e)
                                 }}
-                            ><span style={{color: "#FF8C00"}}>•</span> Tiktok URL</a>
+                            ><span style={{ color: "#FF8C00" }}>•</span> Tiktok URL</a>
                         </Fragment>
                     }
                 </div>
@@ -144,7 +147,7 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                 {/* Twitter/text/tiktok input */}
                 {type === 'quote' ?
                     <Fragment>
-                        <label>{quoteSource === 'twitter' ? 'Twitter URL' : 'Text'}</label>
+                        <label>{quoteSource === 'twitter' ? 'Twitter URL' : 'Type Text'}</label>
                         <input type="text"
                             id={`${quoteSource}-icon`}
                             name="tweet_url"
@@ -152,7 +155,7 @@ const FormCard = ({ type, setCaption, setQuoteImageSrc }) => {
                             onChange={(e) => setTweetUrl(e.target.value)} />
                     </Fragment> :
                     <Fragment>
-                        <label>{videoSource === 'twitter' ? 'Twitter' : 'TikTok'}</label>
+                        <label>{videoSource === 'twitter' ? 'Twitter URL' : 'TikTok URL'}</label>
                         <input type="text"
                             id={`${videoSource}-icon`}
                             name="tweet_url"
