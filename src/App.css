@@ -868,6 +868,10 @@ img, video {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(100%) contrast(103%);
 }
 
+.footer .footer-text p span a {
+    text-decoration: none;
+}
+
 /* 404 not found */
 .not-found {
     display: flex;
