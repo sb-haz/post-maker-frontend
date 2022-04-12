@@ -15,7 +15,8 @@ function App() {
       type: 'quote',
       path: '/quote',
       title: 'Quote Maker',
-      desc: `Share a Tweet link to make a quote image. The image will be produced in a 1:1 format with a watermark.`,
+      // desc: `Share a Tweet link to make a quote image. The image will be produced in a 1:1 format with a watermark.`,
+      desc: `Type a text to turn into an Instagram quote.`,
       media_src: '/examples/quote_maker.png'
     }, {
       type: 'video',
