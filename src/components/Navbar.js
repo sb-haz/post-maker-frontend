@@ -6,11 +6,11 @@ const Navbar = () => {
             <NavLink to='/'><h1 className="logo insta-colour-gradient">Post Maker</h1></NavLink>
             <div className="links">
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
-                    to='/tool/quote'>Quote</NavLink>
+                    to='/quote'>Quote</NavLink>
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
-                    to='/tool/video'>Video</NavLink>
+                    to='/video'>Video</NavLink>
                 <NavLink className={(navData) => navData.isActive ? 'navbar-active' : 'navbar-link'}
-                    to='/tool/reel'>Reel</NavLink>
+                    to='/reel'>Reel</NavLink>
             </div>
         </navbar>
     );

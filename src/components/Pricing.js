@@ -15,8 +15,9 @@ const Pricing = () => {
                             </tr>
                             <tr>
                                 <td>Monthly Price</td>
-                                <td>£0</td>
-                                <td className="blur-price">£19/m</td>
+                                <td>$0</td>
+                                <td className="">$9/m</td>
+                                {/* <td className="blur-price">$9/m</td> */}
                             </tr>
                             <tr>
                                 <td><img src="/icons/pricing-twitter.png" className="unselectable" alt="" />Video</td>
