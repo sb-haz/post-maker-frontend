@@ -557,6 +557,7 @@ img, video {
     min-width: 120px;
     align-self: center;
     background-color: white;
+    color: black;
 }
 
 /* example card*/
